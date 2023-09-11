@@ -4,6 +4,7 @@
 #include "PVZ_USFX_LAB01Pawn.h"
 #include "Zombie.h"
 #include "Plant.h"
+#include "Sol.h"
 
 APVZ_USFX_LAB01GameMode::APVZ_USFX_LAB01GameMode()
 {
@@ -18,6 +19,8 @@ void APVZ_USFX_LAB01GameMode::BeginPlay()
 {
 	Super::BeginPlay();
 
+	//Definicion de un objeto de tipo World
+	UWorld* World = GetWorld();
 	// Lugar donde quieras crear la instancia del objeto de planta
 	//FVector SpawnLocation1 = FVector(-850.0f, 400.0f, 160.0f); // Cambia las coordenadas según tus necesidades
 
@@ -40,6 +43,7 @@ void APVZ_USFX_LAB01GameMode::BeginPlay()
 
 	//AZombie* NewZombieActor3 = GetWorld()->SpawnActor<AZombie>(AZombie::StaticClass(), SpawnLocation, FRotator::ZeroRotator);
 
+	ASol* Sol1 = GetWorld()->SpawnActor<ASol>(ASol::StaticClass(), FVector(-400.0f, -50.0f, 160.0f), FRotator::ZeroRotator);
 
 	FVector SpawnLocationZombie = FVector(-800.0f, 400.0f, 160.0f);
 
@@ -97,23 +101,23 @@ void APVZ_USFX_LAB01GameMode::BeginPlay()
 		SpawnLocationPlantTemp.Y = SpawnLocationPlant.Y;
 	}
 	
-	//World->GetTimerManager().SetTimer(Temporizador, this, &APVZ_USFX_LAB01GameMode::aumentarVelocidad, 1, true);
+	World->GetTimerManager().SetTimer(Temporizador, this, &APVZ_USFX_LAB01GameMode::aumentarVelocidad, 1, true);
 }
 
 void APVZ_USFX_LAB01GameMode::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	TiempoTranscurrido += DeltaTime;
+	//TiempoTranscurrido += DeltaTime;
 
-	if (TiempoTranscurrido > 2.0f) {
-		// Iterar sobre el vector de objetos
-		for (int i = 0; i < vectorZombies.Num(); i++) {
-			vectorZombies[i]->MovementSpeed = FMath::FRand() * 0.1f;
-			//vectorZombies[i]->MovementSpeed += i * 1.0f;
-		}
-		TiempoTranscurrido = 0.0f;
-	}
+	//if (TiempoTranscurrido > 2.0f) {
+	//	// Iterar sobre el vector de objetos
+	//	for (int i = 0; i < vectorZombies.Num(); i++) {
+	//		vectorZombies[i]->MovementSpeed = FMath::FRand() * 0.1f;
+	//		//vectorZombies[i]->MovementSpeed += i * 1.0f;
+	//	}
+	//	TiempoTranscurrido = 0.0f;
+	//}
 
 }
 
