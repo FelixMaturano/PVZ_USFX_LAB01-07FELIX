@@ -13,7 +13,7 @@ UMovimientoAleatorio::UMovimientoAleatorio()
 
 
 	// ...
-	RadioMovimiento = 10;
+	MovementRadius = 5;
 }
 
 
@@ -35,17 +35,10 @@ void UMovimientoAleatorio::TickComponent(float DeltaTime, ELevelTick TickType, F
 	AActor* Parent = GetOwner();
 	if (Parent)
 	{
-		// Find a new position for the object to go to
-		//Movimiento aleatorio
-		auto NewPos = Parent->GetActorLocation() + FVector(FMath::FRandRange(-1, 1) * RadioMovimiento, FMath::FRandRange(-1, 1) * RadioMovimiento, 0);
-		// Update the object's position
-		Parent->SetActorLocation(NewPos);
-
-
-		//Rotacion aleatoria
-		auto NewRot = Parent->GetActorRotation() + FRotator(FMath::FRandRange(-1, 1) * RadioMovimiento, FMath::FRandRange(-1, 1) * RadioMovimiento, FMath::FRandRange(-1, 1) * RadioMovimiento);
-		//Actualizar la rotacion
-		Parent->SetActorRotation(NewRot);
+		Parent->SetActorLocation(Parent->GetActorLocation() + FVector(
+			FMath::FRandRange(-1, 1) * MovementRadius,
+			FMath::FRandRange(-1, 1) * MovementRadius,
+			FMath::FRandRange(-1, 1) * MovementRadius));
 	}
 
 }

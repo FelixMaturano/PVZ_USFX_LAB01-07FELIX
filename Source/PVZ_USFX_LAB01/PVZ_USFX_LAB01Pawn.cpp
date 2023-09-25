@@ -14,6 +14,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundBase.h"
 
+//es para que se pueda mover el personaje con el teclado
 const FName APVZ_USFX_LAB01Pawn::MoveForwardBinding("MoveForward");
 const FName APVZ_USFX_LAB01Pawn::MoveRightBinding("MoveRight");
 const FName APVZ_USFX_LAB01Pawn::FireForwardBinding("FireForward");
@@ -34,8 +35,8 @@ APVZ_USFX_LAB01Pawn::APVZ_USFX_LAB01Pawn()
 	static ConstructorHelpers::FObjectFinder<USoundBase> FireAudio(TEXT("/Game/TwinStick/Audio/TwinStickFire.TwinStickFire"));
 	FireSound = FireAudio.Object;
 
-	// Create a camera boom...
-	// Crear un brazo de cámara...
+	 ////Create a camera boom...
+	 ////Crear un brazo de cámara...
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
 	CameraBoom->SetUsingAbsoluteRotation(true); // Don't want arm to rotate when ship does
@@ -57,7 +58,7 @@ APVZ_USFX_LAB01Pawn::APVZ_USFX_LAB01Pawn()
 	// Weapon
 	// Arma
 	GunOffset = FVector(90.f, 0.f, 0.f);
-	FireRate = 0.1f;
+	FireRate =100.9f;
 	bCanFire = true;
 }
 
@@ -78,7 +79,6 @@ void APVZ_USFX_LAB01Pawn::Tick(float DeltaSeconds)
 {
 	// Find movement direction
 	// Encontrar dirección de movimiento
-
 	const float ForwardValue = GetInputAxisValue(MoveForwardBinding);
 	const float RightValue = GetInputAxisValue(MoveRightBinding);
 
@@ -108,7 +108,6 @@ void APVZ_USFX_LAB01Pawn::Tick(float DeltaSeconds)
 	
 	// Create fire direction vector
 	// Crear un vector de dirección de disparo
-
 	const float FireForwardValue = GetInputAxisValue(FireForwardBinding);
 	const float FireRightValue = GetInputAxisValue(FireRightBinding);
 	const FVector FireDirection = FVector(FireForwardValue, FireRightValue, 0.f);
@@ -122,18 +121,16 @@ void APVZ_USFX_LAB01Pawn::FireShot(FVector FireDirection)
 {
 	// If it's ok to fire again
 	// Si está bien disparar de nuevo
-
 	if (bCanFire == true)
 	{
 		// If we are pressing fire stick in a direction
 		// Si estamos presionando la palanca de disparo en una dirección
-
 		if (FireDirection.SizeSquared() > 0.0f)
 		{
 			const FRotator FireRotation = FireDirection.Rotation();
+
 			// Spawn projectile at an offset from this pawn
 			// Generar proyectil en un desplazamiento desde este peón
-
 			const FVector SpawnLocation = GetActorLocation() + FireRotation.RotateVector(GunOffset);
 
 			UWorld* const World = GetWorld();
@@ -141,7 +138,6 @@ void APVZ_USFX_LAB01Pawn::FireShot(FVector FireDirection)
 			{
 				// spawn the projectile
 				// Generar el proyectil
-
 				World->SpawnActor<APVZ_USFX_LAB01Projectile>(SpawnLocation, FireRotation);
 			}
 

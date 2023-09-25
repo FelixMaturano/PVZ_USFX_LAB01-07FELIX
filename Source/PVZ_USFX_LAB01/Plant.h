@@ -8,31 +8,41 @@
 
 class UStaticMeshComponent;
 
-UCLASS()
+UCLASS(Abstract)
 class PVZ_USFX_LAB01_API APlant : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	APlant();
 
-	//class UStaticMeshComponent* PlantMesh;
-
-	UPROPERTY (EditAnywhere)
-	UStaticMeshComponent* PlantMeshComponent;
-
-	void eliminarZombie(class	APVZ_USFX_LAB01GameMode* GameModeBasePVZ);
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+	UPROPERTY(EditAnywhere)
+	class UStaticMeshComponent* PlantMeshComponent;
+
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	
+	
+	//---------------->>>>>>>>>>>>>>>>>>>>>>>>
+	int energia;
 
-	UPROPERTY(VisibleAnywhere)
-	int  energia;
+
+	
+
+	float TiempoTranscurrido;
+	float TiempoEntreDisparos;
+	float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);
+	float Health = 20.0f;
+
+	void Defender() PURE_VIRTUAL(APlant::Defender, );
+
+private:
 
 };

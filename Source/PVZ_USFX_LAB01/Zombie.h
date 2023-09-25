@@ -6,33 +6,44 @@
 #include "GameFramework/Actor.h"
 #include "Zombie.generated.h"
 
-class UStaticMeshComponent;
-
-UCLASS()
+UCLASS(Abstract)
 class PVZ_USFX_LAB01_API AZombie : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	AZombie();
-	UPROPERTY(EditAnywhere)
 
-	UStaticMeshComponent* ZombieMesh;
+public:
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Zombie")
+	UPROPERTY(EditAnywhere)
+	class UStaticMeshComponent* ZombieMeshComponent;
+	UFUNCTION()
+	void OnOverlapBeginFunction(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	UFUNCTION()
+	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	UPROPERTY(EditAnywhere)
-	float MovementSpeed;//Velocidad de movimiento
+	float DamageGenerates = 10.0f;
+	float Health = 500.0f;
+	float SpawnAfter = 0.0f;
+	float MovementSpeed = 6.1f;
+	bool bCanMove = false;
 
-	float energia;
+	float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);
+	void MoveToTarget(FVector TargetLocation);
 
-	//float Velocidad;
+	virtual void Attack() PURE_VIRTUAL(AZombie::Attack, );
 
+	FORCEINLINE void SetSpawnAfter(float _SpawnAfter) { SpawnAfter = _SpawnAfter; }
+	FORCEINLINE float GetSpawnAfter() { return SpawnAfter; }
+	FORCEINLINE void SetCanMove(bool _bCanMove) { bCanMove = _bCanMove; }
 };

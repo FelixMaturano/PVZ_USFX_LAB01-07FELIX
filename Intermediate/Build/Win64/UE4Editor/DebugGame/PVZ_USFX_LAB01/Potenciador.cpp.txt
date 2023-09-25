@@ -1,0 +1,3 @@
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\DebugGame\PVZ_USFX_LAB01\Definitions.PVZ_USFX_LAB01.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Potenciador.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Potenciador.generated.h

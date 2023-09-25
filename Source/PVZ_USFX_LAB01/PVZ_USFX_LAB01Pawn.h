@@ -51,7 +51,6 @@ public:
 
 	// Begin Actor Interface
 	// Comienzo de la Interfaz del Actor
-
 	virtual void Tick(float DeltaSeconds) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 	// End Actor Interface
@@ -60,12 +59,10 @@ public:
 
 	/* Fire a shot in the specified direction */
 	// Disparar un proyectil en la dirección especificada 
-
 	void FireShot(FVector FireDirection);
 
 	/* Handler for the fire timer expiry */
 	// Manejador para la expiración del temporizador de disparo 
-
 	void ShotTimerExpired();
 
 	// Static names for axis bindings
@@ -79,23 +76,21 @@ private:
 
 	/* Flag to control firing  */
 	// Bandera para controlar el disparo 
-
 	uint32 bCanFire : 1;
 
 	/** Handle for efficient management of ShotTimerExpired timer */
 	// Manejador para una gestión eficiente del temporizador ShotTimerExpired 
-
 	FTimerHandle TimerHandle_ShotTimerExpired;
 
 public:
 	/** Returns ShipMeshComponent subobject **/
 	// Devuelve el subobjeto ShipMeshComponent 
-
 	FORCEINLINE class UStaticMeshComponent* GetShipMeshComponent() const { return ShipMeshComponent; }
+
 	/** Returns CameraComponent subobject **/
 	// Devuelve el subobjeto CameraComponent 
-
 	FORCEINLINE class UCameraComponent* GetCameraComponent() const { return CameraComponent; }
+
 	/** Returns CameraBoom subobject **/
 	// Devuelve el subobjeto CameraBoom 
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }

@@ -103,9 +103,9 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB01Projectile() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APVZ_USFX_LAB01Projectile_OnHit_Statics::Function_MetaDataParams[] = {
-		{ "Comment", "/** Function to handle the projectile hitting something */" },
+		{ "Comment", "/** Function to handle the projectile hitting something *///funcion para manejar el proyectil golpeando algo\n" },
 		{ "ModuleRelativePath", "PVZ_USFX_LAB01Projectile.h" },
-		{ "ToolTip", "Function to handle the projectile hitting something" },
+		{ "ToolTip", "Function to handle the projectile hitting something //funcion para manejar el proyectil golpeando algo" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APVZ_USFX_LAB01Projectile_OnHit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APVZ_USFX_LAB01Projectile, nullptr, "OnHit", nullptr, nullptr, sizeof(PVZ_USFX_LAB01Projectile_eventOnHit_Parms), Z_Construct_UFunction_APVZ_USFX_LAB01Projectile_OnHit_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APVZ_USFX_LAB01Projectile_OnHit_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00C20401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APVZ_USFX_LAB01Projectile_OnHit_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APVZ_USFX_LAB01Projectile_OnHit_Statics::Function_MetaDataParams)) };
@@ -146,7 +146,7 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB01Projectile() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_PVZ_USFX_LAB01,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_APVZ_USFX_LAB01Projectile_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_APVZ_USFX_LAB01Projectile_OnHit, "OnHit" }, // 2377903907
+		{ &Z_Construct_UFunction_APVZ_USFX_LAB01Projectile_OnHit, "OnHit" }, // 4149061499
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APVZ_USFX_LAB01Projectile_Statics::Class_MetaDataParams[] = {
@@ -158,10 +158,10 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB01Projectile() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APVZ_USFX_LAB01Projectile_Statics::NewProp_ProjectileMesh_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Projectile" },
-		{ "Comment", "/** Sphere collision component */" },
+		{ "Comment", "/** Sphere collision component *///componente de colision de esfera\n" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "PVZ_USFX_LAB01Projectile.h" },
-		{ "ToolTip", "Sphere collision component" },
+		{ "ToolTip", "Sphere collision component //componente de colision de esfera" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APVZ_USFX_LAB01Projectile_Statics::NewProp_ProjectileMesh = { "ProjectileMesh", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APVZ_USFX_LAB01Projectile, ProjectileMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APVZ_USFX_LAB01Projectile_Statics::NewProp_ProjectileMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APVZ_USFX_LAB01Projectile_Statics::NewProp_ProjectileMesh_MetaData)) };
@@ -169,10 +169,10 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB01Projectile() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APVZ_USFX_LAB01Projectile_Statics::NewProp_ProjectileMovement_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Movement" },
-		{ "Comment", "/** Projectile movement component */" },
+		{ "Comment", "/** Projectile movement component *///componente de movimiento de proyectil\n" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "PVZ_USFX_LAB01Projectile.h" },
-		{ "ToolTip", "Projectile movement component" },
+		{ "ToolTip", "Projectile movement component //componente de movimiento de proyectil" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APVZ_USFX_LAB01Projectile_Statics::NewProp_ProjectileMovement = { "ProjectileMovement", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APVZ_USFX_LAB01Projectile, ProjectileMovement), Z_Construct_UClass_UProjectileMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APVZ_USFX_LAB01Projectile_Statics::NewProp_ProjectileMovement_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APVZ_USFX_LAB01Projectile_Statics::NewProp_ProjectileMovement_MetaData)) };
@@ -207,7 +207,7 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB01Projectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APVZ_USFX_LAB01Projectile, 1546068958);
+	IMPLEMENT_CLASS(APVZ_USFX_LAB01Projectile, 2394122744);
 	template<> PVZ_USFX_LAB01_API UClass* StaticClass<APVZ_USFX_LAB01Projectile>()
 	{
 		return APVZ_USFX_LAB01Projectile::StaticClass();

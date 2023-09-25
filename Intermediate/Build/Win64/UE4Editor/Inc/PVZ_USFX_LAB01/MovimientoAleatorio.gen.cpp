@@ -32,9 +32,9 @@ void EmptyLinkFunctionForGeneratedCodeMovimientoAleatorio() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RadioMovimiento_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MovementRadius_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_RadioMovimiento;
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_MovementRadius;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -52,13 +52,13 @@ void EmptyLinkFunctionForGeneratedCodeMovimientoAleatorio() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMovimientoAleatorio_Statics::NewProp_RadioMovimiento_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMovimientoAleatorio_Statics::NewProp_MovementRadius_MetaData[] = {
 		{ "ModuleRelativePath", "MovimientoAleatorio.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_UMovimientoAleatorio_Statics::NewProp_RadioMovimiento = { "RadioMovimiento", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMovimientoAleatorio, RadioMovimiento), METADATA_PARAMS(Z_Construct_UClass_UMovimientoAleatorio_Statics::NewProp_RadioMovimiento_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMovimientoAleatorio_Statics::NewProp_RadioMovimiento_MetaData)) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_UMovimientoAleatorio_Statics::NewProp_MovementRadius = { "MovementRadius", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMovimientoAleatorio, MovementRadius), METADATA_PARAMS(Z_Construct_UClass_UMovimientoAleatorio_Statics::NewProp_MovementRadius_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMovimientoAleatorio_Statics::NewProp_MovementRadius_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMovimientoAleatorio_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMovimientoAleatorio_Statics::NewProp_RadioMovimiento,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMovimientoAleatorio_Statics::NewProp_MovementRadius,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UMovimientoAleatorio_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UMovimientoAleatorio>::IsAbstract,
@@ -87,7 +87,7 @@ void EmptyLinkFunctionForGeneratedCodeMovimientoAleatorio() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMovimientoAleatorio, 1929335602);
+	IMPLEMENT_CLASS(UMovimientoAleatorio, 2130505653);
 	template<> PVZ_USFX_LAB01_API UClass* StaticClass<UMovimientoAleatorio>()
 	{
 		return UMovimientoAleatorio::StaticClass();
