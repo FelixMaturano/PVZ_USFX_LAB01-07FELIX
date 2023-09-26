@@ -3,8 +3,10 @@
 
 #include "Zombie.h"
 #include "Components/StaticMeshComponent.h"
-#include "UObject/ConstructorHelpers.h"
+#include "Components/CapsuleComponent.h"
+
 #include "Plant.h"
+#include "PVZ_USFX_LAB01Projectile.h"
 
 
 // Sets default values
@@ -36,7 +38,63 @@ AZombie::AZombie()
 	Health = 1000.0f;
 	MovementSpeed = 0.1f;
 	bCanMove = false;
+	energia = 20;
+	Velocidad = 0.001f;// Esto define la velocidad 
+
 }
+// Called when the game starts or when spawned
+void AZombie::BeginPlay()
+{
+	Super::BeginPlay();
+	UWorld* const World = GetWorld();
+
+	//SetLifeSpan(10);
+}
+
+
+void AZombie::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	FVector LocalizacionObjetivo = FVector(-800.0f, -600.0f, 160.0f); // Cambia la ubicación objetivo según tus necesidades
+	// Calcula la dirección y distancia al objetivo
+	FVector Direccion = LocalizacionObjetivo - FVector(-800.0f, 400.0f, 160.0f);
+	// Calcula la distancia de al objetivo
+	float DistanciaAlObjetivo = FVector::Dist(LocalizacionObjetivo, this->GetActorLocation());
+
+
+
+
+	// Calcula el desplazamiento en este frame
+	float DeltaMove = Velocidad * GetWorld()->DeltaTimeSeconds;
+
+	if (DeltaMove > DistanciaAlObjetivo)
+	{
+		// Si el desplazamiento excede la distancia al objetivo, mueve directamente al objetivo
+		this->SetActorLocation(LocalizacionObjetivo);
+		//this->SetActorRotation(NewRotation);
+	}
+	else
+	{
+		// Mueve el objeto en la dirección calculada
+		this->AddActorWorldOffset(Direccion * DeltaMove);
+
+	}
+
+
+
+	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Este es un mensaje")));
+
+
+}
+
+void AZombie::morir()
+{
+	Destroy();			//El actor se destruye
+	this->Destroy();		//El actor también se destruye
+	SetActorHiddenInGame(true);	//El actor sólo desaparece
+}
+
 
 void AZombie::OnOverlapBeginFunction(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
@@ -94,29 +152,8 @@ void AZombie::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitive
 }
 
 
-// Called when the game starts or when spawned
-void AZombie::BeginPlay()
-{
-	Super::BeginPlay();
 
-	//SetLifeSpan(10);
-}
 
-// Called every frame
-void AZombie::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-	/*if (Health <= 0.0f)
-	{
-		Destroy();
-	}*/
-
-	if (bCanMove && !this->IsHidden())
-	{
-		MoveToTarget(FVector(-800.0f, -600.0f, 160.0f));
-	}
-}
 
 float AZombie::TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
 {
@@ -149,3 +186,4 @@ void AZombie::MoveToTarget(FVector TargetLocation)
 	}
 
 }
+

@@ -5,9 +5,7 @@
 
 ARepetidora::ARepetidora()
 {
-
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> PlantMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Pipe.Shape_Pipe'"));
 	PlantMeshComponent->SetStaticMesh(PlantMesh.Object);
-
-
+	Tags.Add(TEXT("Repetidora"));
 }

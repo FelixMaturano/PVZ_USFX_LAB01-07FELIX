@@ -2,8 +2,13 @@
 
 
 #include "Plant.h"
+#include "SSeleccionPlantas.h"
 #include "PVZ_USFX_LAB01Projectile.h"
 #include "Zombie.h"
+#include "PVZ_USFX_LAB01GameMode.h"
+#include "UObject/ConstructorHelpers.h"
+#include "Components/StaticMeshComponent.h"
+#include "Components/BoxComponent.h"
 
 // Sets default values
 APlant::APlant()
@@ -14,21 +19,34 @@ APlant::APlant()
 	// Registra la función para la detección de colisiones
 	//OnActorBeginOverlap.AddDynamic(this, &APlant::OnOverlapBegin);
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> PlantMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cylinder.Shape_Cylinder'"));
-
+	
 	PlantMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlantMesh"));
-	//PlantMeshComponent->SetStaticMesh(PlantMesh.Object);
-	//PlantMeshComponent->SetCollisionProfileName(TEXT("Ignore"));
-	PlantMeshComponent->SetCollisionProfileName(UCollisionProfile::BlockAll_ProfileName);
-	PlantMeshComponent->SetSimulatePhysics(false);
+	//MeshPlanta->SetSimulatePhysics(true);
+	PlantMeshComponent->SetupAttachment(RootComponent);
+
 	PlantMeshComponent->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	//MeshPlanta->SetSimulatePhysics(true);
+
+	//ECollisionChannel ECC_MiCanal = ECC_GameTraceChannel1;
+
+	PlantMeshComponent->SetCollisionObjectType(ECollisionChannel::ECC_Pawn);
+
+
+	PlantMeshComponent->SetCollisionProfileName(UCollisionProfile::BlockAllDynamic_ProfileName);
+	PlantMeshComponent->BodyInstance.SetCollisionProfileName("Item");
+
+
+
+
 	RootComponent = PlantMeshComponent;
 
-	TiempoTranscurrido = 0.0f;
-	TiempoEntreDisparos = 1.0f;
-	Tags.Add(TEXT("Plant"));
 
-	energia = 1000;
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> PlantaMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cylinder.Shape_Cylinder'"));
+
+
+	PlantMeshComponent->SetStaticMesh(PlantaMesh.Object);
+	Tags.Add(TEXT("Plant"));
+	energia = 100;
 }
 
 //void APlant::OnOverlapBegin(AActor* OverlappedActor, AActor* OtherActor)
@@ -57,7 +75,7 @@ void APlant::BeginPlay()
 
 	UWorld* const World = GetWorld();
 
-	const FVector direcciondisparo = FVector(10, 10, 100.f);
+	//const FVector direcciondisparo = FVector(10, 10, 100.f);
 
 	//World->GetTimerManager().SetTimer(temporizadordisparo, this, &APlant::disparo(direcciondisparo), 2, true);
 
@@ -71,15 +89,22 @@ void APlant::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
-
-float APlant::TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+void APlant::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
 {
-	// Aquí puedes manejar el daño como desees, por ejemplo, actualizando la salud del actor.
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Health Zombie: %f"), this->Health));
 
-	Health -= Damage;
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Health Zombie: %f"), this->Health));
 
-	// Devuelve la cantidad de daño que se aplicó realmente.
-	return Health;
+
+
 }
+//...........................................................................................................................
+//float APlant::TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+//{
+//	// Aquí puedes manejar el daño como desees, por ejemplo, actualizando la salud del actor.
+//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Health Zombie: %f"), this->Health));
+//
+//	Health -= Damage;
+//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Health Zombie: %f"), this->Health));
+//
+//	// Devuelve la cantidad de daño que se aplicó realmente.
+//	return Health;
+//}

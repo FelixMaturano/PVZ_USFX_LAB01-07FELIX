@@ -1,18 +1,16 @@
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\DebugGame\PVZ_USFX_LAB01\Definitions.PVZ_USFX_LAB01.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\PlantAttack.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Plant.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Plant.generated.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\PlantAttack.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ProjectileMovementComponent.generated.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\PVZ_USFX_LAB01Projectile.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\PVZ_USFX_LAB01Projectile.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
@@ -22,3 +20,6 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\PVZ_USFX_LAB01Projectile.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\PVZ_USFX_LAB01Projectile.generated.h
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\INCLUDE\cmath

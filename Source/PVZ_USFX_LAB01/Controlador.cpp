@@ -9,6 +9,4 @@ AControlador::AControlador()
 	bEnableClickEvents = true;
 
 	DefaultMouseCursor = EMouseCursor::Default;
-
-
 }

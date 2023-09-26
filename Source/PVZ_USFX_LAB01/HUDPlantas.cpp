@@ -6,6 +6,7 @@
 #include "Widgets/SWeakWidget.h"
 #include "GameFramework/PlayerController.h"
 #include "Engine.h"
+#include "Girasol.h"
 void AHUDPlantas::BeginPlay()
 {
 	Super::BeginPlay();
@@ -30,4 +31,15 @@ void AHUDPlantas::QuitarHud()
 			PlayerOwner->SetInputMode(FInputModeGameOnly());
 		}
 	}
+}
+
+void AHUDPlantas::SpawnPlant()
+{
+	float locationX = FMath::RandRange(-820,0);
+	float locationY = FMath::RandRange(-820, 180);
+	
+	AGirasol* Girasol = GetWorld()->SpawnActor<AGirasol>(AGirasol::StaticClass(), FVector(locationX,locationY,160), FRotator::ZeroRotator);
+
+	//APlant* NuevoPlantw = GetWorld()->SpawnActor<APlant>(APlant::StaticClass(), FVector(-1315, -50, 160), FRotator::ZeroRotator);
+
 }

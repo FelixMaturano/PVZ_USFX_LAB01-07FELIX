@@ -3,6 +3,8 @@
 
 #include "SPawn.h"
 #include "Plant.h"
+#include "Zombie.h"
+#include "Jugador.h"
 
 
 // Sets default values
@@ -17,6 +19,25 @@ ASPawn::ASPawn()
 void ASPawn::BeginPlay()
 {
 	Super::BeginPlay();
+
+	AZombie* Zombie1 = GetWorld()->SpawnActor<AZombie>(AZombie::StaticClass(), FVector(400.0, 200.0, 100.0), FRotator::ZeroRotator);
+
+
+	float RandomX = FMath::RandRange(-1000, 1000);
+	float RandomY = FMath::RandRange(-1000, 1000);
+	float Z = 200; // Altura en Z
+
+	FVector SpawnLocation = FVector(RandomX, RandomY, Z);
+
+	APlant* Planta1 = GetWorld()->SpawnActor<APlant>(APlant::StaticClass(), FVector(RandomX, RandomY, Z), FRotator(150, 253, 180));
+
+
+
+	//AJugador* Jugador = GetWorld()->SpawnActor<AJugador>(AJugador::StaticClass(), FVector(RandomX, RandomY, Z), FRotator(150, 253, 180));
+
+
+	UWorld* const World = GetWorld();
+	World->GetTimerManager().SetTimer(Temporizador, this, &ASPawn::spawnPlant, 2, false);
 	
 }
 
@@ -24,6 +45,7 @@ void ASPawn::BeginPlay()
 void ASPawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
 
 }
 

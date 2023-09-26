@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PVZ_USFX_LAB01.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{A7C7F69D-172A-4019-B42E-9722236741AF}</UniqueIdentifier>
+      <UniqueIdentifier>{73138283-C204-405D-8111-BC0A6AC496D7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PVZ_USFX_LAB01.Target.cs">
       <Filter>Source</Filter>
@@ -13,9 +13,8 @@
     </None>
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
-    <None Include="..\..\Binaries - Acceso directo.lnk" />
     <Filter Include="Config">
-      <UniqueIdentifier>{CE126365-CB99-4036-83B2-51F52B9D806E}</UniqueIdentifier>
+      <UniqueIdentifier>{466D2733-2B67-4F9D-8E0C-6709099D8C34}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -33,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PVZ_USFX_LAB01">
-      <UniqueIdentifier>{97D526B7-0679-4798-A258-C60A22D19A64}</UniqueIdentifier>
+      <UniqueIdentifier>{B4105DA2-F5E6-4ECA-9172-527A4FA52918}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\ActorJerarquico.cpp">
       <Filter>Source\PVZ_USFX_LAB01</Filter>

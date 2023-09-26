@@ -3,16 +3,17 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Plant.h"
+#include "PlantAttack.h"
 #include "Lanzaguisantes.generated.h"
 
 /**
- *
+ * 
  */
 UCLASS()
-class PVZ_USFX_LAB01_API ALanzaguisantes : public APlant
+class PVZ_USFX_LAB01_API ALanzaguisantes : public APlantAttack
 {
 	GENERATED_BODY()
 public:
 	ALanzaguisantes();
+	
 };

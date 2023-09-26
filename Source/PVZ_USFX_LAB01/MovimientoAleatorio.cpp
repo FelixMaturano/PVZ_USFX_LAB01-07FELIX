@@ -35,10 +35,7 @@ void UMovimientoAleatorio::TickComponent(float DeltaTime, ELevelTick TickType, F
 	AActor* Parent = GetOwner();
 	if (Parent)
 	{
-		Parent->SetActorLocation(Parent->GetActorLocation() + FVector(
-			FMath::FRandRange(-1, 1) * MovementRadius,
-			FMath::FRandRange(-1, 1) * MovementRadius,
-			FMath::FRandRange(-1, 1) * MovementRadius));
+		Parent->SetActorLocation(Parent->GetActorLocation() + FVector(FMath::FRandRange(-1, 1) * MovementRadius,FMath::FRandRange(-1, 1) * MovementRadius,FMath::FRandRange(-1, 1) * MovementRadius));
 	}
 
 }

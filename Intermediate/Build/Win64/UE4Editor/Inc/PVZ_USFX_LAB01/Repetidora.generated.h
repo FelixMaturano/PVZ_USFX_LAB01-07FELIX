@@ -21,7 +21,7 @@ private: \
 	static void StaticRegisterNativesARepetidora(); \
 	friend struct Z_Construct_UClass_ARepetidora_Statics; \
 public: \
-	DECLARE_CLASS(ARepetidora, APlant, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/PVZ_USFX_LAB01"), NO_API) \
+	DECLARE_CLASS(ARepetidora, APlantAttack, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/PVZ_USFX_LAB01"), NO_API) \
 	DECLARE_SERIALIZER(ARepetidora)
 
 
@@ -30,7 +30,7 @@ private: \
 	static void StaticRegisterNativesARepetidora(); \
 	friend struct Z_Construct_UClass_ARepetidora_Statics; \
 public: \
-	DECLARE_CLASS(ARepetidora, APlant, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/PVZ_USFX_LAB01"), NO_API) \
+	DECLARE_CLASS(ARepetidora, APlantAttack, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/PVZ_USFX_LAB01"), NO_API) \
 	DECLARE_SERIALIZER(ARepetidora)
 
 

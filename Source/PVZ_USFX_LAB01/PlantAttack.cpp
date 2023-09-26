@@ -3,15 +3,17 @@
 
 #include "PlantAttack.h"
 #include "Components/StaticMeshComponent.h"
-#include "GameFramework/ProjectileMovementComponent.h"
-#include "PVZ_USFX_LAB01Projectile.h"
 #include "Engine/StaticMesh.h"
 #include "UObject/ConstructorHelpers.h"
+#include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/BoxComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Engine/World.h"
-#include "TimerManager.h"
 
+#include "PVZ_USFX_LAB01Projectile.h"
+
+#include "TimerManager.h"
+#include <cmath>
 APlantAttack::APlantAttack()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -20,16 +22,19 @@ APlantAttack::APlantAttack()
 
 
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> PlantAtaqueMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_NarrowCapsule.Shape_NarrowCapsule'"));
-	//MeshPlanta->SetStaticMesh(PlantAtaqueMesh.Object);
+	PlantMeshComponent->SetStaticMesh(PlantAtaqueMesh.Object);
 	PlantMeshComponent->SetRelativeScale3D(FVector(0.5f, 0.5f, 1.5f));
 
 
 
 	bCanFire = true;
 	GunOffset = FVector(40.f, 40.f, 40.f);
-	FireRate = 0.2f;
+	FireRate = 0.5f;
 
-	energia = 150;
+	energia = 200;
+
+	CantidadDisparos = 1;
+	contador = 1;
 }
 
 
@@ -39,7 +44,7 @@ void APlantAttack::BeginPlay()
 
 
 	UWorld* const World = GetWorld();
-	GetWorldTimerManager().SetTimer(ManejoTiempo, this, &APlantAttack::AtaquePlanta, 01.0f, true, 0.0f);
+	GetWorldTimerManager().SetTimer(ManejoTiempo, this, &APlantAttack::AtaquePlanta, FireRate, true, 0.1f);
 
 }
 
@@ -56,6 +61,7 @@ void APlantAttack::AtaquePlanta()
 
 void APlantAttack::FireShot(FVector FireDirection)
 {
+	// If it's ok to fire again
 	if (bCanFire == true)
 	{
 		// If we are pressing fire stick in a direction

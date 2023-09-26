@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/BoxComponent.h"
 #include "Zombie.generated.h"
 
 UCLASS(Abstract)
@@ -38,8 +39,16 @@ public:
 	float MovementSpeed = 6.1f;
 	bool bCanMove = false;
 
+	UPROPERTY(EditAnywhere)
+	float Velocidad;
+
+	UPROPERTY(VisibleAnywhere)
+	int energia;
+
 	float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);
 	void MoveToTarget(FVector TargetLocation);
+
+	void morir();
 
 	virtual void Attack() PURE_VIRTUAL(AZombie::Attack, );
 

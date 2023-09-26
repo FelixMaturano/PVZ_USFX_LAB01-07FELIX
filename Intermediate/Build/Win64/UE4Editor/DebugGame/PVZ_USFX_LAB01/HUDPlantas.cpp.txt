@@ -676,3 +676,7 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.3282
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\INCLUDE\isa_availability.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Slate\Public\Widgets/Input/SSlider.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Slate\Public\Framework/Docking/LayoutService.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Girasol.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Plant.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Plant.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Girasol.generated.h

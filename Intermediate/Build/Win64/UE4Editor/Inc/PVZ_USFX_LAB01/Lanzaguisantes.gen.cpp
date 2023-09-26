@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeLanzaguisantes() {}
 // Cross Module References
 	PVZ_USFX_LAB01_API UClass* Z_Construct_UClass_ALanzaguisantes_NoRegister();
 	PVZ_USFX_LAB01_API UClass* Z_Construct_UClass_ALanzaguisantes();
-	PVZ_USFX_LAB01_API UClass* Z_Construct_UClass_APlant();
+	PVZ_USFX_LAB01_API UClass* Z_Construct_UClass_APlantAttack();
 	UPackage* Z_Construct_UPackage__Script_PVZ_USFX_LAB01();
 // End Cross Module References
 	void ALanzaguisantes::StaticRegisterNativesALanzaguisantes()
@@ -35,12 +35,12 @@ void EmptyLinkFunctionForGeneratedCodeLanzaguisantes() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_ALanzaguisantes_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_APlant,
+		(UObject* (*)())Z_Construct_UClass_APlantAttack,
 		(UObject* (*)())Z_Construct_UPackage__Script_PVZ_USFX_LAB01,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ALanzaguisantes_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n *\n */" },
+		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "Lanzaguisantes.h" },
 		{ "ModuleRelativePath", "Lanzaguisantes.h" },
 	};
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeLanzaguisantes() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ALanzaguisantes, 2456559564);
+	IMPLEMENT_CLASS(ALanzaguisantes, 4043457043);
 	template<> PVZ_USFX_LAB01_API UClass* StaticClass<ALanzaguisantes>()
 	{
 		return ALanzaguisantes::StaticClass();

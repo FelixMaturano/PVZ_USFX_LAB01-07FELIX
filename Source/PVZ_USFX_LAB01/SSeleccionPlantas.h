@@ -31,6 +31,8 @@ public:
 
 	FReply QuitarMenu();
 
+	FReply SpawnPlant();
+
 
 	
 };

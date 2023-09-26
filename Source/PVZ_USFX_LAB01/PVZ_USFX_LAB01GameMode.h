@@ -10,6 +10,9 @@ class APotenciador;
 class APlant;
 class ALanzaguisantes;
 class APlantAttack;
+class AZombie;
+class AZombieComun;
+class Girasol;
 
 UCLASS(MinimalAPI)
 class APVZ_USFX_LAB01GameMode : public AGameModeBase
@@ -19,8 +22,8 @@ class APVZ_USFX_LAB01GameMode : public AGameModeBase
 public:
 	APVZ_USFX_LAB01GameMode();
 
-	TArray<class AZombie*> ArrayZombies;
-	TArray<class APlant*> ArrayPlants;
+	TArray<class AZombie*> Zombies;
+	TMap<FString ,APlant*> Plantas;
 	//TMap<APotenciador*, int32> MapPotenciadores;
 	TMap<FString, uint32> MapPotenciadores;
 	TMap<FString, uint32> MapTarjetasPlantas;
@@ -33,21 +36,21 @@ public:
 
 	TMap<FName, int32> mOrdaZombies;
 	int32 NumberZombiesSpawned = 0;
-	TArray<APlant*> aPlantas;
+	TArray<APlant*> Plantas2;
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 protected:
 	virtual void BeginPlay() override;
 
-	class AZombieComun* SpawnZombieComun(FVector _spawnPosition);
-	class AZombieCono* SpawnZombieCono(FVector _spawnPosition);
-	class AZombieCubo* SpawnZombieCubo(FVector _spawnPosition);
-	class AZombieSenal* SpawnZombieSenal(FVector _spawnPosition);
+	//class AZombieComun* SpawnZombieComun(FVector _spawnPosition);
+	//class AZombieCono* SpawnZombieCono(FVector _spawnPosition);
+	//class AZombieCubo* SpawnZombieCubo(FVector _spawnPosition);
+	//class AZombieSenal* SpawnZombieSenal(FVector _spawnPosition);
 
-	class APlant* SpawnPlant(FVector _spawnPosition);
+	//class APlant* SpawnPlant(FVector _spawnPosition);
 
-	class ALanzaguisantes* SpawnPlantLanzaguisantes(FVector _spawnPosition);
+	//class ALanzaguisantes* SpawnPlantLanzaguisantes(FVector _spawnPosition);
 
 
 	float TiempoTranscurrido = 0.0f;
@@ -64,10 +67,34 @@ protected:
 	FTimerHandle TimerHandlePotenciadoresAgua;
 	float IncrementarAguaCada = 20.0f;
 
-	void TimerCallBackPotenciadoresAgua();
-	void TimerCallBackTarjetasPlantaNuez();
-	void VisualizarPotenciadores();
-	void VisualizarTarjetasPlantas();
+	////////void TimerCallBackPotenciadoresAgua();
+	////////void TimerCallBackTarjetasPlantaNuez();
+	////////void VisualizarPotenciadores();
+	////////void VisualizarTarjetasPlantas();
+
+
+	//
+
+	int contador2;
+	FVector contador;
+	FVector localizacion;
+
+	int FilaActual;
+	int ColumnaActual;
+
+	//float TiempoTranscurrido;
+
+	ALanzaguisantes* NuevaPlantaGuisante;
+
+	FString NombrePlanta;
+
+	FTimerHandle Temporizador2;
+
+	void MostrarEnergiaDePlantas();
+	void AumentoVelocidad();
+	void Spawn();
+
+	AZombieComun* NuevoZombie;
 
 };
 

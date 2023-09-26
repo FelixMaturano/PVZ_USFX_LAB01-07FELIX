@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeZombieCono() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AZombieCono, 1584711714);
+	IMPLEMENT_CLASS(AZombieCono, 3455955207);
 	template<> PVZ_USFX_LAB01_API UClass* StaticClass<AZombieCono>()
 	{
 		return AZombieCono::StaticClass();

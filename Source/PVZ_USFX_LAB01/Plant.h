@@ -4,7 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/BoxComponent.h"
 #include "Plant.generated.h"
+
 
 class UStaticMeshComponent;
 
@@ -31,17 +33,20 @@ public:
 	
 	
 	//---------------->>>>>>>>>>>>>>>>>>>>>>>>
+	UPROPERTY(VisibleAnywhere)
 	int energia;
 
 
 	
 
-	float TiempoTranscurrido;
-	float TiempoEntreDisparos;
-	float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);
-	float Health = 20.0f;
-
-	void Defender() PURE_VIRTUAL(APlant::Defender, );
+	//float TiempoTranscurrido;
+	//float TiempoEntreDisparos;
+	//float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);
+	//float Health = 20.0f;
+	UFUNCTION()
+	virtual void NotifyHit(class UPrimitiveComponent* MyComp, AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal,
+		FVector NormalImpulse, const FHitResult& Hit)override;//esta funcion nos notifica cada golpe que de la clase.
+	//void Defender() PURE_VIRTUAL(APlant::Defender, );
 
 private:
 

@@ -1,6 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserve
 
 #include "PVZ_USFX_LAB01Projectile.h"
+#include "Zombie.h"
+#include "Plant.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Components/StaticMeshComponent.h"
@@ -13,12 +15,14 @@ APVZ_USFX_LAB01Projectile::APVZ_USFX_LAB01Projectile()
 	PrimaryActorTick.bCanEverTick = true;
 	// Static reference to the mesh to use for the projectile
 	//Referencia estática a la malla para usar en el proyectil
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ProjectileMeshAsset(TEXT("/Game/TwinStick/Meshes/TwinStickProjectile.TwinStickProjectile"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ProjectileMeshAsset(TEXT("StaticMesh'/Game/TwinStick/Meshes/TwinStickProjectile.TwinStickProjectile'"));
+	///////static ConstructorHelpers::FObjectFinder<UStaticMesh> ProjectileMeshAsset2(TEXT("StaticMesh'/Game/TwinStick/Meshes/TwinStickProjectile.TwinStickProjectile'"));
 
 	// Create mesh component for the projectile sphere
 	//Crear componente de malla para la esfera del proyectil
 	ProjectileMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMesh0"));
 	ProjectileMesh->SetStaticMesh(ProjectileMeshAsset.Object);
+	//////////ProjectileMesh->SetStaticMesh(ProjectileMeshAsset2.Object);
 	ProjectileMesh->SetupAttachment(RootComponent);
 	ProjectileMesh->BodyInstance.SetCollisionProfileName("Projectile");
 	ProjectileMesh->OnComponentHit.AddDynamic(this, &APVZ_USFX_LAB01Projectile::OnHit);		// set up a notification for when this component hits something
@@ -75,3 +79,5 @@ void APVZ_USFX_LAB01Projectile::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 }
+
+///Game/TwinStick/Meshes/TwinStickProjectile.TwinStickProjectile

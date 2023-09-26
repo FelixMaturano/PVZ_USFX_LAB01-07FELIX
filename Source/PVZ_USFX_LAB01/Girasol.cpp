@@ -2,39 +2,49 @@
 
 
 #include "Girasol.h"
+#include "Sol.h"
 
 AGirasol::AGirasol()
 {
+	PrimaryActorTick.bCanEverTick = true;
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> MeshGirasol(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Trim.Shape_Trim'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> MeshGirasol(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Tube.Shape_Tube'"));
 
 
 
 	PlantMeshComponent->SetStaticMesh(MeshGirasol.Object);
-	PlantMeshComponent->SetRelativeScale3D(FVector(3.5f, 1.5f, 3.5f));
+	PlantMeshComponent->SetRelativeScale3D(FVector(0.5f, 0.5f, 0.5f));
 	Tags.Add(TEXT("Girasol"));
-
 	energia = 140;
+
 
 }
 
 void AGirasol::BeginPlay()
 {
+	Super::BeginPlay();
 
+	int Tiempo = FMath::RandRange(3, 6);
+
+	UWorld* const World = GetWorld();
+	World->GetTimerManager().SetTimer(Temporizador, this, &AGirasol::SpawnSoles, Tiempo, true);
 
 }
 
 void AGirasol::Tick(float DeltaTime)
 {
 
-
+	Super::Tick(DeltaTime);
 
 
 }
 
 void AGirasol::SpawnSoles()
 {
+	UWorld* const World = GetWorld();
 
+	FVector Ubicacion = GetActorLocation();
 
+	World ->SpawnActor<ASol>(ASol::StaticClass(), FVector(Ubicacion.X,Ubicacion.Y,100), FRotator::ZeroRotator);
 
 }

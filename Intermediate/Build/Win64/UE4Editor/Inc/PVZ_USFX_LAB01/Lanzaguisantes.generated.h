@@ -21,7 +21,7 @@ private: \
 	static void StaticRegisterNativesALanzaguisantes(); \
 	friend struct Z_Construct_UClass_ALanzaguisantes_Statics; \
 public: \
-	DECLARE_CLASS(ALanzaguisantes, APlant, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/PVZ_USFX_LAB01"), NO_API) \
+	DECLARE_CLASS(ALanzaguisantes, APlantAttack, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/PVZ_USFX_LAB01"), NO_API) \
 	DECLARE_SERIALIZER(ALanzaguisantes)
 
 
@@ -30,7 +30,7 @@ private: \
 	static void StaticRegisterNativesALanzaguisantes(); \
 	friend struct Z_Construct_UClass_ALanzaguisantes_Statics; \
 public: \
-	DECLARE_CLASS(ALanzaguisantes, APlant, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/PVZ_USFX_LAB01"), NO_API) \
+	DECLARE_CLASS(ALanzaguisantes, APlantAttack, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/PVZ_USFX_LAB01"), NO_API) \
 	DECLARE_SERIALIZER(ALanzaguisantes)
 
 

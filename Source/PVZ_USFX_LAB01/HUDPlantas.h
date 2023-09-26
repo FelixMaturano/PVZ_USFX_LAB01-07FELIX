@@ -21,5 +21,7 @@ public:
 	virtual void BeginPlay() override;
 
 	void QuitarHud();
+
+	void SpawnPlant(); 
 	
 };

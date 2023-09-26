@@ -1,3 +1,6 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
 #include "Lanzaguisantes.h"
 
 ALanzaguisantes::ALanzaguisantes()
@@ -6,4 +9,9 @@ ALanzaguisantes::ALanzaguisantes()
 	PlantMeshComponent->SetStaticMesh(PlantMesh.Object);
 
 	Tags.Add(TEXT("Lanzaguisantes"));
+
+	PlantMeshComponent->SetRelativeScale3D(FVector(0.5f, 0.5f, 0.5f));
+
+	CantidadDisparos = 5;
+
 }

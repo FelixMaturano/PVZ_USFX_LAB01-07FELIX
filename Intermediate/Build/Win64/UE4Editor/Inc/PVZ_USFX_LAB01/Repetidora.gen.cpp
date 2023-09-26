@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeRepetidora() {}
 // Cross Module References
 	PVZ_USFX_LAB01_API UClass* Z_Construct_UClass_ARepetidora_NoRegister();
 	PVZ_USFX_LAB01_API UClass* Z_Construct_UClass_ARepetidora();
-	PVZ_USFX_LAB01_API UClass* Z_Construct_UClass_APlant();
+	PVZ_USFX_LAB01_API UClass* Z_Construct_UClass_APlantAttack();
 	UPackage* Z_Construct_UPackage__Script_PVZ_USFX_LAB01();
 // End Cross Module References
 	void ARepetidora::StaticRegisterNativesARepetidora()
@@ -35,7 +35,7 @@ void EmptyLinkFunctionForGeneratedCodeRepetidora() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_ARepetidora_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_APlant,
+		(UObject* (*)())Z_Construct_UClass_APlantAttack,
 		(UObject* (*)())Z_Construct_UPackage__Script_PVZ_USFX_LAB01,
 	};
 #if WITH_METADATA
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeRepetidora() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ARepetidora, 1080578625);
+	IMPLEMENT_CLASS(ARepetidora, 3377708289);
 	template<> PVZ_USFX_LAB01_API UClass* StaticClass<ARepetidora>()
 	{
 		return ARepetidora::StaticClass();

@@ -70,11 +70,11 @@ void SSeleccionPlantas::Construct(const FArguments& InArgs)
 												+ SHorizontalBox::Slot()
 												[
 													SNew(SButton)
-														.OnClicked(this, &SSeleccionPlantas::OnClicked)
+														.OnClicked(this, &SSeleccionPlantas::SpawnPlant)
 														[
 															SNew(STextBlock)
 																.Font(ButtonTextStyle)
-																.Text(FText::FromString("Planta 2"))
+																.Text(FText::FromString("Spawn Plant"))
 																.Justification(ETextJustify::Center)
 														]
 												]
@@ -152,4 +152,13 @@ FReply SSeleccionPlantas::QuitarMenu()
 	}
 	return FReply::Handled();
 }
+FReply SSeleccionPlantas::SpawnPlant()
+{
+	if (OwningHUD.IsValid())
+	{
+		OwningHUD->SpawnPlant();
+	}
+	return FReply::Handled();
+}
+
 END_SLATE_FUNCTION_BUILD_OPTIMIZATION
