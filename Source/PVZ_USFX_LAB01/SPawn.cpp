@@ -6,11 +6,13 @@
 #include "Zombie.h"
 #include "Jugador.h"
 
+#include "PVZ_USFX_LAB01GameMode.h"
+
 
 // Sets default values
 ASPawn::ASPawn()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 }
@@ -38,7 +40,7 @@ void ASPawn::BeginPlay()
 
 	UWorld* const World = GetWorld();
 	World->GetTimerManager().SetTimer(Temporizador, this, &ASPawn::spawnPlant, 2, false);
-	
+
 }
 
 // Called every frame
@@ -67,4 +69,3 @@ void ASPawn::spawnPlant()
 		SpawnLocationPlantTemp.Y = SpawnLocationPlant.Y;
 	}
 }
-

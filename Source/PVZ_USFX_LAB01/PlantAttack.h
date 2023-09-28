@@ -36,7 +36,7 @@ public:
 protected:
 
 	void FireShot(FVector FireDirection);
-	//void OnOverlapBegin(AActor* OverlappedActor, AActor* OtherActor);
+	void OnOverlapBegin(AActor* OverlappedActor, AActor* OtherActor);
 
 	/** Offset from the ships location to spawn projectiles */
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
@@ -49,11 +49,17 @@ protected:
 	void ShotTimerExpired();
 
 	float TiempoTranscurrido;
+	float TiempoEntreDisparos;
 	/* Flag to control firing  */
+
+	float TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);
+	float Health = 10.0f;
 
 	/** Handle for efficient management of ShotTimerExpired timer */
 	FTimerHandle TimerHandle_ShotTimerExpired;
 
 	int CantidadDisparos;
 	int contador;
+
+	//APVZ_USFX_LAB01Projectile *ProyectilFuego;
 };

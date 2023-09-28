@@ -5,7 +5,11 @@
 
 ARepetidora::ARepetidora()
 {
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> PlantMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Pipe.Shape_Pipe'"));
-	PlantMeshComponent->SetStaticMesh(PlantMesh.Object);
+	//static ConstructorHelpers::FObjectFinder<UStaticMesh> FuegoMeshAsset(TEXT("StaticMesh'/Game/TwinStick/Meshes/TwinStickProjectile.TwinStickProjectile'"));
+	//ProjectileMesh->SetStaticMesh(FuegoMeshAsset.Object);
 	Tags.Add(TEXT("Repetidora"));
+
+
+
+
 }

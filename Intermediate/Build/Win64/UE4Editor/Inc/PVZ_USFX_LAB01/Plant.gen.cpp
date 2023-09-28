@@ -122,9 +122,9 @@ void EmptyLinkFunctionForGeneratedCodePlant() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlant_NotifyHit_Statics::Function_MetaDataParams[] = {
-		{ "Comment", "//float TiempoTranscurrido;\n//float TiempoEntreDisparos;\n//float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);\n//float Health = 20.0f;\n" },
+		{ "Comment", "//float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);\n//float Health = 20.0f;\n" },
 		{ "ModuleRelativePath", "Plant.h" },
-		{ "ToolTip", "float TiempoTranscurrido;\nfloat TiempoEntreDisparos;\nfloat TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);\nfloat Health = 20.0f;" },
+		{ "ToolTip", "float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);\nfloat Health = 20.0f;" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlant_NotifyHit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlant, nullptr, "NotifyHit", nullptr, nullptr, sizeof(Plant_eventNotifyHit_Parms), Z_Construct_UFunction_APlant_NotifyHit_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APlant_NotifyHit_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00C20400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlant_NotifyHit_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APlant_NotifyHit_Statics::Function_MetaDataParams)) };
@@ -165,7 +165,7 @@ void EmptyLinkFunctionForGeneratedCodePlant() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_PVZ_USFX_LAB01,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_APlant_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_APlant_NotifyHit, "NotifyHit" }, // 3327815833
+		{ &Z_Construct_UFunction_APlant_NotifyHit, "NotifyHit" }, // 2972644027
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlant_Statics::Class_MetaDataParams[] = {
@@ -220,7 +220,7 @@ void EmptyLinkFunctionForGeneratedCodePlant() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlant, 673930371);
+	IMPLEMENT_CLASS(APlant, 1885304700);
 	template<> PVZ_USFX_LAB01_API UClass* StaticClass<APlant>()
 	{
 		return APlant::StaticClass();

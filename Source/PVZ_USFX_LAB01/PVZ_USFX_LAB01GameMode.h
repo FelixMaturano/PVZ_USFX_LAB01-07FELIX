@@ -9,10 +9,13 @@
 class APotenciador;
 class APlant;
 class ALanzaguisantes;
+class ALanzaboomerang;
 class APlantAttack;
 class AZombie;
 class AZombieComun;
 class Girasol;
+class ASPawn;
+class AZombieCono;
 
 UCLASS(MinimalAPI)
 class APVZ_USFX_LAB01GameMode : public AGameModeBase
@@ -22,8 +25,10 @@ class APVZ_USFX_LAB01GameMode : public AGameModeBase
 public:
 	APVZ_USFX_LAB01GameMode();
 
+	///Esto vamos a utilizar para nuestra Orda de Zombies
 	TArray<class AZombie*> Zombies;
-	TMap<FString ,APlant*> Plantas;
+
+	TMap<FString, APlant*> Plantas;
 	//TMap<APotenciador*, int32> MapPotenciadores;
 	TMap<FString, uint32> MapPotenciadores;
 	TMap<FString, uint32> MapTarjetasPlantas;
@@ -85,6 +90,7 @@ protected:
 	//float TiempoTranscurrido;
 
 	ALanzaguisantes* NuevaPlantaGuisante;
+		ALanzaboomerang* NuevaPlantaBoomerang;
 
 	FString NombrePlanta;
 
@@ -96,8 +102,8 @@ protected:
 
 	AZombieComun* NuevoZombie;
 
+
+	AZombieCono* NuevoZombieCono;
+
+
 };
-
-
-
-

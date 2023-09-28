@@ -17,6 +17,7 @@ public:
 	AZombie();
 
 public:
+	TArray<class AZombie*> Zombies;
 	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Zombie")
 	UPROPERTY(EditAnywhere)
 	class UStaticMeshComponent* ZombieMeshComponent;
@@ -55,4 +56,9 @@ public:
 	FORCEINLINE void SetSpawnAfter(float _SpawnAfter) { SpawnAfter = _SpawnAfter; }
 	FORCEINLINE float GetSpawnAfter() { return SpawnAfter; }
 	FORCEINLINE void SetCanMove(bool _bCanMove) { bCanMove = _bCanMove; }
+
+
+
+
+
 };

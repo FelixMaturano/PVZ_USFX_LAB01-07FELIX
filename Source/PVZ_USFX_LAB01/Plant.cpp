@@ -88,6 +88,8 @@ void APlant::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+
+
 }
 void APlant::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
 {

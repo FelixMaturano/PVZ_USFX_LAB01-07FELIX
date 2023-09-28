@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PVZ_USFX_LAB01.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{73138283-C204-405D-8111-BC0A6AC496D7}</UniqueIdentifier>
+      <UniqueIdentifier>{06753699-A226-40CB-9E77-D194103910E6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PVZ_USFX_LAB01.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{466D2733-2B67-4F9D-8E0C-6709099D8C34}</UniqueIdentifier>
+      <UniqueIdentifier>{97BEFF18-BFD0-4B10-A74D-23418588C0E1}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PVZ_USFX_LAB01">
-      <UniqueIdentifier>{B4105DA2-F5E6-4ECA-9172-527A4FA52918}</UniqueIdentifier>
+      <UniqueIdentifier>{569400BC-E09B-402A-8B6A-DA4CC4A732AD}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\ActorJerarquico.cpp">
       <Filter>Source\PVZ_USFX_LAB01</Filter>
@@ -76,6 +76,12 @@
     <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Jugador.h">
       <Filter>Source\PVZ_USFX_LAB01</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Lanzaboomerang.cpp">
+      <Filter>Source\PVZ_USFX_LAB01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Lanzaboomerang.h">
+      <Filter>Source\PVZ_USFX_LAB01</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Lanzaguisantes.cpp">
       <Filter>Source\PVZ_USFX_LAB01</Filter>
     </ClCompile>
@@ -110,6 +116,12 @@
       <Filter>Source\PVZ_USFX_LAB01</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Potenciador.h">
+      <Filter>Source\PVZ_USFX_LAB01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\ProjectileFuego.cpp">
+      <Filter>Source\PVZ_USFX_LAB01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\ProjectileFuego.h">
       <Filter>Source\PVZ_USFX_LAB01</Filter>
     </ClInclude>
     <None Include="..\..\Source\PVZ_USFX_LAB01\PVZ_USFX_LAB01.Build.cs">

@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeGirasol() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGirasol, 2931890858);
+	IMPLEMENT_CLASS(AGirasol, 1474583928);
 	template<> PVZ_USFX_LAB01_API UClass* StaticClass<AGirasol>()
 	{
 		return AGirasol::StaticClass();

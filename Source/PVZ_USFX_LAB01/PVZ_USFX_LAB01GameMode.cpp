@@ -20,7 +20,7 @@
 #include "Girasol.h"
 #include "Nuez.h"
 #include "Hongo.h"
-
+#include "Lanzaboomerang.h"
 #include"SPawn.h"
 
 #include "ZombieComun.h"
@@ -82,13 +82,15 @@ APVZ_USFX_LAB01GameMode::APVZ_USFX_LAB01GameMode()
 }
 
 
+
+
 void APVZ_USFX_LAB01GameMode::BeginPlay()
 {
 	Super::BeginPlay();
 	UWorld* const World = GetWorld();
 
-	FVector SpawnLocationZombie = FVector(-920.0f, 400.0f, 160.0f);
-
+	FVector SpawnLocationZombie = FVector(-1500.0f, 1200.0f, 200.0f);
+	//=========================================================================
 	// Genera 5 zombies
 	for (int i = 0; i < 7; i++) {
 		// Define una posición temporal para el zombie en X
@@ -96,89 +98,22 @@ void APVZ_USFX_LAB01GameMode::BeginPlay()
 		// Aparicion de los zombies
 
 
-		NuevoZombie = GetWorld()->SpawnActor<AZombieComun>(AZombieComun::StaticClass(), SpawnLocationZombie, FRotator::ZeroRotator);
+		NuevoZombieCono = GetWorld()->SpawnActor<AZombieCono>(AZombieCono::StaticClass(), SpawnLocationZombie, FRotator::ZeroRotator);
 
-		NuevoZombie->Velocidad = FMath::FRandRange(0.1, 0.5);
+		NuevoZombieCono->Velocidad = FMath::FRandRange(0.1, 0.2);
 
-		Zombies.Add(NuevoZombie);
+		Zombies.Add(NuevoZombieCono);
 
 	}
 
+	
+	////////	}
+		//Definiendo la posición de las plantas
 
-////////	FTransform SpawnLocation;
-////////	SpawnLocation.SetLocation(FVector(-1500.0f, 1200.0f, 200.0f));
-////////	float initialPositionX = -1500.0f;
-////////	float initialPositionY = 1200.0f;
-////////
-////////	for (int32 i = 0; i < NumberZombiesComun; ++i)
-////////	{
-////////		AZombieComun* NewZombieComun = SpawnZombieComun(FVector(initialPositionX + i * 150.0f, initialPositionY, 200.0f));
-////////
-////////		if (NewZombieComun)
-////////		{
-////////			NewZombieComun->SetSpawnAfter(FMath::RandRange(1, 10));
-////////			NewZombieComun->SetActorHiddenInGame(true);
-////////			NewZombieComun->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
-////////			NewZombieComun->SetCanMove(false);
-////////			ArrayZombies.Add(NewZombieComun);
-////////		}
-////////	}
-////////
-////////	initialPositionX = -1500.0f;
-////////	initialPositionY = 1200.0f;
-////////
-////////	for (int32 i = 0; i < NumberZombiesCono; ++i)
-////////	{
-////////		AZombieCono* NewZombieCono = SpawnZombieCono(FVector(initialPositionX + i * 150.0f, initialPositionY, 200.0f));
-////////
-////////		if (NewZombieCono)
-////////		{
-////////			NewZombieCono->SetSpawnAfter(FMath::RandRange(1, 10));
-////////			NewZombieCono->SetActorHiddenInGame(true);
-////////			NewZombieCono->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
-////////			NewZombieCono->SetCanMove(false);
-////////			ArrayZombies.Add(NewZombieCono);
-////////		}
-////////	}
-////////
-//////////	Aparición de los soles
-/////ASol* Sol1 = GetWorld()->SpawnActor<ASol>(ASol::StaticClass(), FVector(-400,-50,160), FRotator::ZeroRotator);
-//////////ASol* Sol2 = GetWorld()->SpawnActor<ASol>(ASol::StaticClass(), FVector(-450, -50, 160), FRotator::ZeroRotator);
-////////	initialPositionX = -1500.0f;
-////////	initialPositionY = 1200.0f;
-////////
-////////	for (int32 i = 0; i < NumberZombiesCubo; ++i)
-////////	{
-////////		AZombieCubo* NewZombieCubo = SpawnZombieCubo(FVector(initialPositionX + i * 150.0f, initialPositionY, 200.0f));
-////////
-////////		if (NewZombieCubo)
-////////		{
-////////			NewZombieCubo->SetSpawnAfter(FMath::RandRange(1, 10));
-////////			NewZombieCubo->SetActorHiddenInGame(true);
-////////			NewZombieCubo->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
-////////			NewZombieCubo->SetCanMove(false);
-////////			ArrayZombies.Add(NewZombieCubo);
-////////		}
-////////	}
-////////
-////////	initialPositionX = -1500.0f;
-////////	initialPositionY = 1200.0f;
-////////
-////////	for (int32 i = 0; i < NumberZombiesSenal; ++i)
-////////	{
-////////		AZombieSenal* NewZombieSenal = SpawnZombieSenal(FVector(initialPositionX + i * 150.0f, initialPositionY, 200.0f));
-////////
-////////		if (NewZombieSenal)
-////////		{
-////////			NewZombieSenal->SetSpawnAfter(FMath::RandRange(1, 10));
-////////			NewZombieSenal->SetActorHiddenInGame(true);
-////////			NewZombieSenal->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
-////////			NewZombieSenal->SetCanMove(false);
-////////			ArrayZombies.Add(NewZombieSenal);
-////////		}
-////////	}
-	//Definiendo la posición de las plantas
-	FVector SpawnLocationPlant = FVector(-920.0f, -600.0f, 160.0f);
+
+
+	//..............................................................................................
+	FVector SpawnLocationPlant = FVector(-1500.0f, -1000.0f, 200.0f);
 	FVector SpawnLocationPlantTemp = SpawnLocationPlant;
 
 	// Genera 5 plantas
@@ -199,24 +134,24 @@ void APVZ_USFX_LAB01GameMode::BeginPlay()
 			NombrePlanta = FString::Printf(TEXT("Planta %d_%d"), i + 1, j + 1); // Cambio en la generación del nombre
 
 			// Crea una nueva instancia de APlant en el mundo
-			NuevaPlantaGuisante = GetWorld()->SpawnActor<ALanzaguisantes>(ALanzaguisantes::StaticClass(), SpawnLocationPlantTemp, FRotator::ZeroRotator);
+			NuevaPlantaBoomerang = GetWorld()->SpawnActor<ALanzaboomerang>(ALanzaboomerang::StaticClass(), SpawnLocationPlantTemp, FRotator::ZeroRotator);
 
 			// Asigna un valor aleatorio a la energía de la planta
-			NuevaPlantaGuisante->energia = FMath::FRandRange(0.0, 10.0);
+			NuevaPlantaBoomerang->energia = FMath::FRandRange(0.0, 10.0);
 
 			// Muestra un mensaje en la consola
 			//UE_LOG(LogTemp, Warning, TEXT("Energía de %s: %i"), *NombrePlanta, NuevaPlanta->energia);
 
 			// Muestra un mensaje en la pantalla
-			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Green, FString::Printf(TEXT("Energía de %s: %i"), *NombrePlanta, NuevaPlantaGuisante->energia));
+			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Green, FString::Printf(TEXT("Energía de %s: %i"), *NombrePlanta, NuevaPlantaBoomerang->energia));
 			// Muestra un mensaje en el registro de errores
-			UE_LOG(LogTemp, Warning, TEXT("Energía de %s: %i"), *NombrePlanta, NuevaPlantaGuisante->energia);
+			UE_LOG(LogTemp, Warning, TEXT("Energía de %s: %i"), *NombrePlanta, NuevaPlantaBoomerang->energia);
 
 			// Agrega la planta al contenedor de plantas
-			Plantas.Add(NombrePlanta, NuevaPlantaGuisante);
+			Plantas.Add(NombrePlanta, NuevaPlantaBoomerang);
 
 
-			Plantas2.Add(NuevaPlantaGuisante);
+			Plantas2.Add(NuevaPlantaBoomerang);
 
 
 			// Coloca la planta en una posición diferente
@@ -276,7 +211,7 @@ void APVZ_USFX_LAB01GameMode::BeginPlay()
 	MapPotenciadores.Add(TEXT("Regadera"), 0);
 	MapPotenciadores.Add(TEXT("Pala"), 5);
 
-	
+
 	if (World != nullptr)
 	{
 		// spawn the projectile
@@ -328,38 +263,38 @@ void APVZ_USFX_LAB01GameMode::Tick(float DeltaTime)
 	////////	//VisualizarPotenciadores();
 	////////}
 
-	//////////	if (ArrayZombies.Num() > 0) {
+	//	if (ArrayZombies.Num() > 0) {
 
-	////////for (AZombie* ActualZombie : Zombies)
-	////////{
-	////////	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("SpawnAfter: %f"), ActualZombie->GetSpawnAfter()));
+	////for (AZombie* ActualZombie : Zombies)
+	////{
+	////	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("SpawnAfter: %f"), ActualZombie->GetSpawnAfter()));
 
-	////////	if (ActualZombie && ActualZombie->SpawnAfter <= 0)
-	////////	{
-	////////		ActualZombie->SetActorScale3D(FVector(1.0f, 1.0f, 1.0f));      // Establece la escala de spawn deseada
-	////////		ActualZombie->SetActorHiddenInGame(false);      // Haz que el actor sea visible
-	////////		ActualZombie->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
-	////////		ActualZombie->SetCanMove(true);     // Habilita las colisiones si es necesario
-	////////		NumberZombiesSpawned += 1;
+	////	if (ActualZombie && ActualZombie->SpawnAfter <= 0)
+	////	{
+	////		ActualZombie->SetActorScale3D(FVector(1.0f, 1.0f, 1.0f));      // Establece la escala de spawn deseada
+	////		ActualZombie->SetActorHiddenInGame(false);      // Haz que el actor sea visible
+	////		ActualZombie->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
+	////		ActualZombie->SetCanMove(true);     // Habilita las colisiones si es necesario
+	////		NumberZombiesSpawned += 1;
 
-	////////		Zombies.Remove(ActualZombie);
+	////		Zombies.Remove(ActualZombie);
 
 
-	////////		for (TPair<FString, uint32> ElementoActual : MapPotenciadores)
-	////////		{
-	////////			FString Llave = ElementoActual.Key;
-	////////			int32 Valor = ElementoActual.Value;
-	////////			//UE_LOG(LogTemp, Warning, TEXT("Llave: %s, Valor: %d"), *Llave, Valor);
+	////		for (TPair<FString, uint32> ElementoActual : MapPotenciadores)
+	////		{
+	////			FString Llave = ElementoActual.Key;
+	////			int32 Valor = ElementoActual.Value;
+	////			//UE_LOG(LogTemp, Warning, TEXT("Llave: %s, Valor: %d"), *Llave, Valor);
 
-	////////			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Elemento: %s, Cantidad: %d"), *ElementoActual.Key, ElementoActual.Value));
-	////////		}
+	////			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Elemento: %s, Cantidad: %d"), *ElementoActual.Key, ElementoActual.Value));
+	////		}
 
-	////////	}
-	////////	else
-	////////	{
-	////////		ActualZombie->SpawnAfter -= DeltaTime;
-	////////	}
-	////////}
+	////	}
+	////	else
+	////	{
+	////		ActualZombie->SpawnAfter -= DeltaTime;
+	////	}
+	////}
 	/* }
 else {
 	VisualizarPotenciadores();
@@ -473,6 +408,7 @@ void APVZ_USFX_LAB01GameMode::Spawn()
 
 
 }
+
 void APVZ_USFX_LAB01GameMode::MostrarEnergiaDePlantas()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Este es un mensaje")));
@@ -519,3 +455,5 @@ void APVZ_USFX_LAB01GameMode::AumentoVelocidad()
 		Zombies[i]->Velocidad = +FMath::FRandRange(0, 0.2);
 	}
 }
+
+

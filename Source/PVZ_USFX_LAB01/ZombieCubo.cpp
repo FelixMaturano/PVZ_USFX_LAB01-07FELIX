@@ -5,6 +5,6 @@
 
 AZombieCubo::AZombieCubo()
 {
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ZombieMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ZombieMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Trim_90_Out.Shape_Trim_90_Out'"));
 	ZombieMeshComponent->SetStaticMesh(ZombieMesh.Object);
 }

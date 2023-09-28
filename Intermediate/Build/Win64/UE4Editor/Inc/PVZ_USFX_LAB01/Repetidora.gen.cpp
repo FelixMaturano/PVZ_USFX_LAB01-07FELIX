@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeRepetidora() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ARepetidora, 3377708289);
+	IMPLEMENT_CLASS(ARepetidora, 642873158);
 	template<> PVZ_USFX_LAB01_API UClass* StaticClass<ARepetidora>()
 	{
 		return ARepetidora::StaticClass();

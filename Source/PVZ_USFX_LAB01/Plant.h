@@ -36,11 +36,10 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	int energia;
 
-
+	TArray<APlant*> Plantas;
 	
 
-	//float TiempoTranscurrido;
-	//float TiempoEntreDisparos;
+
 	//float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);
 	//float Health = 20.0f;
 	UFUNCTION()

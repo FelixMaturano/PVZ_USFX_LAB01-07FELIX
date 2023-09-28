@@ -16,6 +16,7 @@ class APVZ_USFX_LAB01Projectile : public AActor
 
 	/** Sphere collision component */
 	//componente de colision de esfera
+protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* ProjectileMesh;
 
@@ -46,7 +47,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	float DamageGenerates = 10.0f;
-	float MaxDistance = 400.0f;
+	float MaxDistance = 800.0f;
 };
 
 

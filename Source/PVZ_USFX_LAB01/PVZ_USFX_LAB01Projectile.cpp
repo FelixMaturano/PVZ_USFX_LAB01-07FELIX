@@ -3,6 +3,7 @@
 #include "PVZ_USFX_LAB01Projectile.h"
 #include "Zombie.h"
 #include "Plant.h"
+#include "ZombieCono.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Components/StaticMeshComponent.h"
@@ -33,15 +34,18 @@ APVZ_USFX_LAB01Projectile::APVZ_USFX_LAB01Projectile()
 	//Usar un ProjectileMovementComponent para gobernar el movimiento del proyectil
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement0"));
 	ProjectileMovement->UpdatedComponent = ProjectileMesh;
-	ProjectileMovement->InitialSpeed = 250.0f;
-	ProjectileMovement->MaxSpeed = 250.0f;
+	ProjectileMovement->InitialSpeed = 2000.0f;
+	ProjectileMovement->MaxSpeed = 620.0f;
 	ProjectileMovement->bRotationFollowsVelocity = true;
 	ProjectileMovement->bShouldBounce = false;
-	ProjectileMovement->ProjectileGravityScale = 0.f; // No gravity//Sin gravedad
+	ProjectileMovement->ProjectileGravityScale = 0.0f; // No gravity//Sin gravedad
+	//float RandomGravityScale = FMath::FRandRange(0.12f, 0.5f); // Genera un valor aleatorio entre 0.0 y 1.0
+	//ProjectileMovement->ProjectileGravityScale = RandomGravityScale;
+
 
 	// Die after 3 seconds by default
 	//Morir después de 3 segundos por defecto
-	MaxDistance = 1000.0f;
+	MaxDistance = 10000.0f; 
 	//InitialLifeSpan = 10.0f;
 	InitialLifeSpan = MaxDistance / ProjectileMovement->InitialSpeed;
 	DamageGenerates = 10.0f;
