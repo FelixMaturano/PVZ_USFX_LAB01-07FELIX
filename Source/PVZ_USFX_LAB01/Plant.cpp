@@ -2,7 +2,6 @@
 
 
 #include "Plant.h"
-#include "SSeleccionPlantas.h"
 #include "PVZ_USFX_LAB01Projectile.h"
 #include "Zombie.h"
 #include "PVZ_USFX_LAB01GameMode.h"
@@ -20,33 +19,34 @@ APlant::APlant()
 	//OnActorBeginOverlap.AddDynamic(this, &APlant::OnOverlapBegin);
 
 	
-	PlantMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlantMesh"));
+	MeshPlanta = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlantMesh"));
 	//MeshPlanta->SetSimulatePhysics(true);
-	PlantMeshComponent->SetupAttachment(RootComponent);
+	MeshPlanta->SetupAttachment(RootComponent);
 
-	PlantMeshComponent->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	MeshPlanta->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	//MeshPlanta->SetSimulatePhysics(true);
 
 	//ECollisionChannel ECC_MiCanal = ECC_GameTraceChannel1;
 
-	PlantMeshComponent->SetCollisionObjectType(ECollisionChannel::ECC_Pawn);
+	MeshPlanta->SetCollisionObjectType(ECollisionChannel::ECC_Pawn);
 
 
-	PlantMeshComponent->SetCollisionProfileName(UCollisionProfile::BlockAllDynamic_ProfileName);
-	PlantMeshComponent->BodyInstance.SetCollisionProfileName("Item");
+	MeshPlanta->SetCollisionProfileName(UCollisionProfile::BlockAllDynamic_ProfileName);
+	MeshPlanta->BodyInstance.SetCollisionProfileName("Item");
 
 
 
 
-	RootComponent = PlantMeshComponent;
+	RootComponent = MeshPlanta;
 
 
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> PlantaMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cylinder.Shape_Cylinder'"));
 
 
-	PlantMeshComponent->SetStaticMesh(PlantaMesh.Object);
+	MeshPlanta->SetStaticMesh(PlantaMesh.Object);
 	Tags.Add(TEXT("Plant"));
 	energia = 100;
+	Tags.Add(TEXT("Plant"));
 }
 
 //void APlant::OnOverlapBegin(AActor* OverlappedActor, AActor* OtherActor)
@@ -88,9 +88,9 @@ void APlant::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-
-
 }
+
+
 void APlant::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
 {
 

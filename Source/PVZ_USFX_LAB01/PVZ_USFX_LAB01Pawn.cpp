@@ -2,6 +2,7 @@
 // Derechos de autor de Epic Games, Inc. Todos los derechos reservados.
 
 #include "PVZ_USFX_LAB01Pawn.h"
+#include "Jugador.h"
 #include "PVZ_USFX_LAB01Projectile.h"
 #include "TimerManager.h"
 #include "UObject/ConstructorHelpers.h"
@@ -12,6 +13,8 @@
 #include "Engine/CollisionProfile.h"
 #include "Engine/StaticMesh.h"
 #include "Kismet/GameplayStatics.h"
+#include "HeadMountedDisplayFunctionLibrary.h"
+
 #include "Sound/SoundBase.h"
 
 //es para que se pueda mover el personaje con el teclado
@@ -127,6 +130,7 @@ void APVZ_USFX_LAB01Pawn::FireShot(FVector FireDirection)
 		// Si estamos presionando la palanca de disparo en una dirección
 		if (FireDirection.SizeSquared() > 0.0f)
 		{
+			
 			const FRotator FireRotation = FireDirection.Rotation();
 
 			// Spawn projectile at an offset from this pawn

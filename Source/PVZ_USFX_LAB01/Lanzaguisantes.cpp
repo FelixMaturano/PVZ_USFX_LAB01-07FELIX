@@ -6,11 +6,11 @@
 ALanzaguisantes::ALanzaguisantes()
 {
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> PlantMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cylinder.Shape_Cylinder'"));
-	PlantMeshComponent->SetStaticMesh(PlantMesh.Object);
+	MeshPlanta->SetStaticMesh(PlantMesh.Object);
 
 	Tags.Add(TEXT("Lanzaguisantes"));
 
-	PlantMeshComponent->SetRelativeScale3D(FVector(0.5f, 0.5f, 0.5f));
+	MeshPlanta->SetRelativeScale3D(FVector(0.5f, 0.5f, 0.5f));
 
 	CantidadDisparos = 5;
 

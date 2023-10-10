@@ -104,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodePlantAttack() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlantAttack, 3521008531);
+	IMPLEMENT_CLASS(APlantAttack, 4059997159);
 	template<> PVZ_USFX_LAB01_API UClass* StaticClass<APlantAttack>()
 	{
 		return APlantAttack::StaticClass();

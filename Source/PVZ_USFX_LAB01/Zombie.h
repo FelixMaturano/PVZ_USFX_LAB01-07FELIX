@@ -7,6 +7,7 @@
 #include "Components/BoxComponent.h"
 #include "Zombie.generated.h"
 
+
 UCLASS(Abstract)
 class PVZ_USFX_LAB01_API AZombie : public AActor
 {
@@ -17,12 +18,16 @@ public:
 	AZombie();
 
 public:
+
 	TArray<class AZombie*> Zombies;
+
 	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Zombie")
 	UPROPERTY(EditAnywhere)
 	class UStaticMeshComponent* ZombieMeshComponent;
+
 	UFUNCTION()
 	void OnOverlapBeginFunction(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	
 	UFUNCTION()
 	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 
@@ -56,9 +61,6 @@ public:
 	FORCEINLINE void SetSpawnAfter(float _SpawnAfter) { SpawnAfter = _SpawnAfter; }
 	FORCEINLINE float GetSpawnAfter() { return SpawnAfter; }
 	FORCEINLINE void SetCanMove(bool _bCanMove) { bCanMove = _bCanMove; }
-
-
-
 
 
 };

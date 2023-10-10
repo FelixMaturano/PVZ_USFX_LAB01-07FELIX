@@ -31,8 +31,8 @@ C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\P
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\PlantAttack.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\PlantAttack.generated.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Lanzaguisantes.generated.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Repetidora.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Repetidora.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Lanzaboomerang.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Lanzaboomerang.generated.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\HUDPlantas.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
@@ -46,12 +46,6 @@ C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\P
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Jugador.generated.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Girasol.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Girasol.generated.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Nuez.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Nuez.generated.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Hongo.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Hongo.generated.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Lanzaboomerang.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Lanzaboomerang.generated.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\SPawn.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\SPawn.generated.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\ZombieComun.h
@@ -60,5 +54,3 @@ C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\P
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\ZombieCono.generated.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\ZombieCubo.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\ZombieCubo.generated.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\ZombieSenal.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\ZombieSenal.generated.h

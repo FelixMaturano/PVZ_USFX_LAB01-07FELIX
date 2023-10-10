@@ -13,9 +13,8 @@ class ALanzaboomerang;
 class APlantAttack;
 class AZombie;
 class AZombieComun;
-class Girasol;
+class AGirasol;
 class ASPawn;
-class AZombieCono;
 
 UCLASS(MinimalAPI)
 class APVZ_USFX_LAB01GameMode : public AGameModeBase
@@ -43,9 +42,11 @@ public:
 	int32 NumberZombiesSpawned = 0;
 	TArray<APlant*> Plantas2;
 public:
+
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 protected:
+
 	virtual void BeginPlay() override;
 
 	//class AZombieComun* SpawnZombieComun(FVector _spawnPosition);
@@ -90,7 +91,7 @@ protected:
 	//float TiempoTranscurrido;
 
 	ALanzaguisantes* NuevaPlantaGuisante;
-		ALanzaboomerang* NuevaPlantaBoomerang;
+	ALanzaboomerang* NuevaPlantaBoomerang;
 
 	FString NombrePlanta;
 
@@ -103,7 +104,7 @@ protected:
 	AZombieComun* NuevoZombie;
 
 
-	AZombieCono* NuevoZombieCono;
+
 
 
 };

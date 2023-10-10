@@ -13,6 +13,7 @@ UCLASS()
 class PVZ_USFX_LAB01_API AControlador : public APlayerController
 {
 	GENERATED_BODY()
+public:
 
 	AControlador();
 	

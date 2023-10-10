@@ -26,8 +26,8 @@ APlantAttack::APlantAttack()
 
 
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> PlantAtaqueMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_NarrowCapsule.Shape_NarrowCapsule'"));
-	PlantMeshComponent->SetStaticMesh(PlantAtaqueMesh.Object);
-	PlantMeshComponent->SetRelativeScale3D(FVector(0.5f, 0.5f, 0.5f));
+	MeshPlanta->SetStaticMesh(PlantAtaqueMesh.Object);
+	MeshPlanta->SetRelativeScale3D(FVector(0.5f, 0.5f, 0.5f));
 
 
 

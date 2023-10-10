@@ -71,7 +71,7 @@ public: \
 
 
 #define PVZ_USFX_LAB01_05_Source_PVZ_USFX_LAB01_Plant_h_16_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__PlantMeshComponent() { return STRUCT_OFFSET(APlant, PlantMeshComponent); }
+	FORCEINLINE static uint32 __PPO__MeshPlanta() { return STRUCT_OFFSET(APlant, MeshPlanta); }
 
 
 #define PVZ_USFX_LAB01_05_Source_PVZ_USFX_LAB01_Plant_h_13_PROLOG

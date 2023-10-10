@@ -3,6 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "SlateBasics.h"
+#include "SlateExtras.h"
 #include "Widgets/SCompoundWidget.h"
 
 /**
@@ -25,7 +27,7 @@ public:
 	virtual bool SupportsKeyboardFocus() const override { return true; };
 
 
-	FReply OnMouseButtonDown(const FGeometry& MyGeometry, const FPointerEvent& MouseEvent) override;
+	//FReply OnMouseButtonDown(const FGeometry& MyGeometry, const FPointerEvent& MouseEvent) override;
 
 	FReply OnClicked();
 

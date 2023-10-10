@@ -7,10 +7,22 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Compone
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Zombie.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/SpringArmComponent.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpringArmComponent.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Plant.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Plant.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Grilla.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Grilla.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Sol.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\MovimientoAleatorio.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\MovimientoAleatorio.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Sol.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\PVZ_USFX_LAB01Pawn.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\PVZ_USFX_LAB01Pawn.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
@@ -20,5 +32,17 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\PVZ_USFX_LAB01Projectile.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\PVZ_USFX_LAB01Projectile.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/SpringArmComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpringArmComponent.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\HeadMountedDisplayFunctionLibrary.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\HeadMountedDisplayTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\IMotionController.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\HeadMountedDisplayTypes.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\IIdentifiableXRDevice.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\IIdentifiableXRDevice.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\XRGestureConfig.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\XRGestureConfig.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\HeadMountedDisplayFunctionLibrary.generated.h

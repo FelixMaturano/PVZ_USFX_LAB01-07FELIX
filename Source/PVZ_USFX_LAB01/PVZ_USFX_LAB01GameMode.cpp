@@ -6,10 +6,13 @@
 #include "Plant.h"
 #include "Potenciador.h"
 #include "Sol.h"
+#include "Math/UnrealMathUtility.h"
+#include "Engine/Engine.h"
 #include "TimerManager.h"
 
 #include"Lanzaguisantes.h"
-#include"Repetidora.h"
+#include "Lanzaboomerang.h"
+
 
 
 #include "HUDPlantas.h"
@@ -18,45 +21,15 @@
 
 #include "PlantAttack.h"
 #include "Girasol.h"
-#include "Nuez.h"
-#include "Hongo.h"
-#include "Lanzaboomerang.h"
 #include"SPawn.h"
 
 #include "ZombieComun.h"
 #include "ZombieCono.h"
 #include "ZombieCubo.h"
-#include "ZombieSenal.h"
 APVZ_USFX_LAB01GameMode::APVZ_USFX_LAB01GameMode()
 {
 	// set default pawn class to our character class
 	PrimaryActorTick.bCanEverTick = true;
-	DefaultPawnClass = APVZ_USFX_LAB01Pawn::StaticClass();
-
-	MapPotenciadores.Add(TEXT("Sol"), 0);
-	MapPotenciadores.Add(TEXT("Abono"), 1);
-	MapPotenciadores.Add(TEXT("Agua"), 2);
-	MapPotenciadores.Add(TEXT("Pala"), 0);
-
-	//GetWorldTimerManager().SetTimer(TimerHandlePotenciadoresAgua, this, &APVZ_USFX_LAB02GameMode::TimerCallBackPotenciadoresAgua, IncrementarAguaCada, false);
-	// En una función de tu clase que hereda de AActor o UObject
-	//GetWorldTimerManager().SetTimer(TimerHandleTarjetasPlantaNuez, this, &APVZ_USFX_LAB02GameMode::TimerCallBackTarjetasPlantaNuez, 15.0f, false);
-
-	MapTarjetasPlantas.Add(TEXT("Lanzaguisantes"), 0);
-	MapTarjetasPlantas.Add(TEXT("Girasol"), 10);
-	MapTarjetasPlantas.Add(TEXT("Nuez"), 10);
-	MapTarjetasPlantas.Add(TEXT("Papa"), 0);
-	MapTarjetasPlantas.Add(TEXT("Hongo"), 1);
-	MapTarjetasPlantas.Add(TEXT("Repetidora"), 10);
-	MapTarjetasPlantas.Add(TEXT("PlantaCarnivora"), 10);
-	MapTarjetasPlantas.Add(TEXT("Lanzamaiz"), 10);
-	MapTarjetasPlantas.Add(TEXT("Patatapulta"), 10);
-
-	TPair<FString, uint32> TarjetaPlanta;
-	TarjetaPlanta.Key = TEXT("LanzaChiles");
-	TarjetaPlanta.Value = 5;
-
-	MapTarjetasPlantas.Add(TarjetaPlanta);
 
 	///////////
 
@@ -87,6 +60,8 @@ APVZ_USFX_LAB01GameMode::APVZ_USFX_LAB01GameMode()
 void APVZ_USFX_LAB01GameMode::BeginPlay()
 {
 	Super::BeginPlay();
+
+
 	UWorld* const World = GetWorld();
 
 	FVector SpawnLocationZombie = FVector(-1500.0f, 1200.0f, 200.0f);
@@ -98,11 +73,11 @@ void APVZ_USFX_LAB01GameMode::BeginPlay()
 		// Aparicion de los zombies
 
 
-		NuevoZombieCono = GetWorld()->SpawnActor<AZombieCono>(AZombieCono::StaticClass(), SpawnLocationZombie, FRotator::ZeroRotator);
+		NuevoZombie = GetWorld()->SpawnActor<AZombieComun>(AZombieComun::StaticClass(), SpawnLocationZombie, FRotator::ZeroRotator);
 
-		NuevoZombieCono->Velocidad = FMath::FRandRange(0.1, 0.2);
+		NuevoZombie->Velocidad = FMath::FRandRange(0.1, 0.2);
 
-		Zombies.Add(NuevoZombieCono);
+		Zombies.Add(NuevoZombie);
 
 	}
 
@@ -168,11 +143,11 @@ void APVZ_USFX_LAB01GameMode::BeginPlay()
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, Mensaje);
 
 
-	//World->GetTimerManager().SetTimer(Temporizador, this, &APVZ_USFX_LAB02GameModeBase::aumentovelocidad, 1, true);
+//	World->GetTimerManager().SetTimer(Temporizador2, this, &APVZ_USFX_LAB01GameMode::aumentovelocidad, 1, true);
 		// Definición de un objeto de tipo World
 		// //''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 	//UWorld* const World = GetWorld();
-	//World->GetTimerManager().SetTimer(Temporizador2, this, &APVZ_USFX_LAB01GameMode::MostrarEnergiaDePlantas, 1.f, true);
+	World->GetTimerManager().SetTimer(Temporizador2, this, &APVZ_USFX_LAB01GameMode::MostrarEnergiaDePlantas, 1.f, true);
 
 
 
@@ -204,20 +179,7 @@ void APVZ_USFX_LAB01GameMode::BeginPlay()
 	//	NewZombie->SetCanMove(true);
 	//}
 
-	/*AMegaSol* NewMegasol1 = GetWorld()->SpawnActor<AMegaSol>(FVector(0.0f, 0.0f, 200.0f), FRotator(0.0f, 0.0f, 0.0f));
-	MapPotenciadores.Add(NewMegasol1, 1);*/
-	MapPotenciadores.Add(TEXT("Megasol"), 1);
-	MapPotenciadores.Add(TEXT("AbonoMagico"), 3);
-	MapPotenciadores.Add(TEXT("Regadera"), 0);
-	MapPotenciadores.Add(TEXT("Pala"), 5);
 
-
-	if (World != nullptr)
-	{
-		// spawn the projectile
-		//World->GetTimerManager().SetTimer(TimerHandleTarjetasPlantaNuez, this, &APVZ_USFX_LAB01GameMode::TimerCallBackTarjetasPlantaNuez, 15.0f);
-
-	}
 
 }
 
@@ -227,166 +189,9 @@ void APVZ_USFX_LAB01GameMode::Tick(float DeltaTime)
 
 	TiempoTranscurrido += DeltaTime;
 
-	//VisualizarTarjetasPlantas();
-
-	////////if (TiempoTrancurridoSiguienteTarjetaLanzaguisantes > 5.0f)
-	////////{
-	////////	MapTarjetasPlantas["Lanzaguisantes"] += 1;
-	////////	TiempoTrancurridoSiguienteTarjetaLanzaguisantes = 0.0f;
-	////////}
-
-	////////if (TiempoTrancurridoSiguienteTarjetaGirasol > 10.0f)
-	////////{
-	////////	MapTarjetasPlantas["Girasol"] += 1;
-	////////	TiempoTrancurridoSiguienteTarjetaGirasol = 0.0f;
-	////////}
-
-	////////TiempoTrancurridoSiguienteTarjetaLanzaguisantes += DeltaTime;
-	////////TiempoTrancurridoSiguienteTarjetaGirasol += DeltaTime;
-
-	////////TiempoTranscurrido += DeltaTime;
-	////////TiempoTranscurridoSiguientePala += DeltaTime;
-	////////TiempoTranscurridoSiguienteAbono += DeltaTime;
-
-	////////if (TiempoTranscurridoSiguienteAbono >= 10.0f)
-	////////{
-	////////	MapPotenciadores[TEXT("Abono")] += 1;
-	////////	TiempoTranscurridoSiguienteAbono = 0.0f;
-	////////	//VisualizarPotenciadores();
-	////////}
-
-
-	////////if (TiempoTranscurridoSiguientePala >= 10.0f)
-	////////{
-	////////	MapPotenciadores[TEXT("Pala")] += 1;
-	////////	TiempoTranscurridoSiguientePala = 0.0f;
-	////////	//VisualizarPotenciadores();
-	////////}
-
-	//	if (ArrayZombies.Num() > 0) {
-
-	////for (AZombie* ActualZombie : Zombies)
-	////{
-	////	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("SpawnAfter: %f"), ActualZombie->GetSpawnAfter()));
-
-	////	if (ActualZombie && ActualZombie->SpawnAfter <= 0)
-	////	{
-	////		ActualZombie->SetActorScale3D(FVector(1.0f, 1.0f, 1.0f));      // Establece la escala de spawn deseada
-	////		ActualZombie->SetActorHiddenInGame(false);      // Haz que el actor sea visible
-	////		ActualZombie->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
-	////		ActualZombie->SetCanMove(true);     // Habilita las colisiones si es necesario
-	////		NumberZombiesSpawned += 1;
-
-	////		Zombies.Remove(ActualZombie);
-
-
-	////		for (TPair<FString, uint32> ElementoActual : MapPotenciadores)
-	////		{
-	////			FString Llave = ElementoActual.Key;
-	////			int32 Valor = ElementoActual.Value;
-	////			//UE_LOG(LogTemp, Warning, TEXT("Llave: %s, Valor: %d"), *Llave, Valor);
-
-	////			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Elemento: %s, Cantidad: %d"), *ElementoActual.Key, ElementoActual.Value));
-	////		}
-
-	////	}
-	////	else
-	////	{
-	////		ActualZombie->SpawnAfter -= DeltaTime;
-	////	}
-	////}
-	/* }
-else {
-	VisualizarPotenciadores();
-}*/
+	
 }
 
-
-//////void APVZ_USFX_LAB01GameMode::VisualizarPotenciadores() {
-//////	for (TPair<FString, uint32> ElementoActual : MapPotenciadores)
-//////	{
-//////		FString Llave = ElementoActual.Key;
-//////		int32 Valor = ElementoActual.Value;
-//////		UE_LOG(LogTemp, Warning, TEXT("Llave: %s, Valor: %d"), *Llave, Valor);
-//////
-//////		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Elemento: %s, Cantidad: %d"), *Llave, Valor));
-//////	}
-//////}
-//////
-//////void APVZ_USFX_LAB01GameMode::VisualizarTarjetasPlantas() {
-//////	for (TPair<FString, uint32> TarjetaActual : MapTarjetasPlantas)
-//////	{
-//////		FString Llave = TarjetaActual.Key;
-//////		int32 Valor = TarjetaActual.Value;
-//////		UE_LOG(LogTemp, Warning, TEXT("Llave: %s, Valor: %d"), *Llave, Valor);
-//////
-//////		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Planta: %s, tiempo recarga: %d"), *Llave, Valor));
-//////	}
-//////}
-//////
-//////
-//////
-//////
-////////AZombie* APVZ_USFX_LAB02GameMode::SpawnZombie(FVector _spawnPosition)
-////////{
-////////	FTransform SpawnLocation;
-////////	SpawnLocation.SetLocation(_spawnPosition);
-////////	return GetWorld()->SpawnActor<AZombie>(AZombie::StaticClass(), SpawnLocation);
-////////}
-//////
-//////AZombieComun* APVZ_USFX_LAB01GameMode::SpawnZombieComun(FVector _spawnPosition)
-//////{
-//////	FTransform SpawnLocation;
-//////	SpawnLocation.SetLocation(_spawnPosition);
-//////	return GetWorld()->SpawnActor<AZombieComun>(AZombieComun::StaticClass(), SpawnLocation);
-//////}
-//////
-//////AZombieCono* APVZ_USFX_LAB01GameMode::SpawnZombieCono(FVector _spawnPosition)
-//////{
-//////	FTransform SpawnLocation;
-//////	SpawnLocation.SetLocation(_spawnPosition);
-//////	return GetWorld()->SpawnActor<AZombieCono>(AZombieCono::StaticClass(), SpawnLocation);
-//////}
-//////
-//////AZombieCubo* APVZ_USFX_LAB01GameMode::SpawnZombieCubo(FVector _spawnPosition)
-//////{
-//////	FTransform SpawnLocation;
-//////	SpawnLocation.SetLocation(_spawnPosition);
-//////	return GetWorld()->SpawnActor<AZombieCubo>(AZombieCubo::StaticClass(), SpawnLocation);
-//////}
-//////
-//////AZombieSenal* APVZ_USFX_LAB01GameMode::SpawnZombieSenal(FVector _spawnPosition)
-//////{
-//////	FTransform SpawnLocation;
-//////	SpawnLocation.SetLocation(_spawnPosition);
-//////	return GetWorld()->SpawnActor<AZombieSenal>(AZombieSenal::StaticClass(), SpawnLocation);
-//////}
-//////
-//////APlant* APVZ_USFX_LAB01GameMode::SpawnPlant(FVector _spawnPosition)
-//////{
-//////	FTransform SpawnLocation;
-//////	SpawnLocation.SetLocation(_spawnPosition);
-//////	return GetWorld()->SpawnActor<APlant>(APlant::StaticClass(), SpawnLocation);
-//////}
-//////
-//////
-//////ALanzaguisantes* APVZ_USFX_LAB01GameMode::SpawnPlantLanzaguisantes(FVector _spawnPosition)
-//////{
-//////	FTransform SpawnLocation;
-//////	SpawnLocation.SetLocation(_spawnPosition);
-//////	return GetWorld()->SpawnActor<ALanzaguisantes>(ALanzaguisantes::StaticClass(), SpawnLocation);
-//////
-//////}
-//////
-//////void APVZ_USFX_LAB01GameMode::TimerCallBackPotenciadoresAgua()
-//////{
-//////	MapPotenciadores[TEXT("Agua")] += 1;
-//////}
-//////
-//////void APVZ_USFX_LAB01GameMode::TimerCallBackTarjetasPlantaNuez()
-//////{
-//////	MapTarjetasPlantas[TEXT("Nuez")] += 1;
-//////}
 
 void APVZ_USFX_LAB01GameMode::Spawn()
 {
@@ -408,6 +213,15 @@ void APVZ_USFX_LAB01GameMode::Spawn()
 
 
 }
+
+void APVZ_USFX_LAB01GameMode::AumentoVelocidad()
+{
+	for (int i = 0; i < Zombies.Num(); i++)
+	{
+		Zombies[i]->Velocidad = +FMath::FRandRange(0, 0.2);
+	}
+}
+
 
 void APVZ_USFX_LAB01GameMode::MostrarEnergiaDePlantas()
 {
@@ -444,16 +258,7 @@ void APVZ_USFX_LAB01GameMode::MostrarEnergiaDePlantas()
 		}
 	}
 
-
-
 }
 
-void APVZ_USFX_LAB01GameMode::AumentoVelocidad()
-{
-	for (int i = 0; i < Zombies.Num(); i++)
-	{
-		Zombies[i]->Velocidad = +FMath::FRandRange(0, 0.2);
-	}
-}
 
 

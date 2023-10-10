@@ -9,6 +9,7 @@
 UCLASS(Blueprintable)
 class APVZ_USFX_LAB01Pawn : public APawn
 {
+public:
 	GENERATED_BODY()
 
 	/* The mesh component */

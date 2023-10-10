@@ -15,6 +15,7 @@ void SSeleccionPlantas::Construct(const FArguments& InArgs)
 	OwningHUD = InArgs._OwningHUD;
 
 	FMargin ContentPadding = FMargin(30, 20);
+
 	FMargin ButtonPadding = FMargin(200, 20);
 
 	const FText TitleText = FText::FromString("Seleccion \n de \nplantas");
@@ -27,14 +28,14 @@ void SSeleccionPlantas::Construct(const FArguments& InArgs)
 	TitleTextStyle.Size = 30.f;
 
 	ChildSlot
-		[
+		[		// Agrega al fondo
 			SNew(SOverlay)
 				+ SOverlay::Slot()
 				.HAlign(HAlign_Left)
 				.VAlign(VAlign_Top)
 				.Padding(ButtonPadding) // Ajusta el relleno según sea necesario
 
-				[
+				[ // Caja horizontal
 					SNew(SBox)
 						.WidthOverride(1000) // Ancho del fondo
 						.HeightOverride(100) // Altura del fondo
@@ -58,6 +59,8 @@ void SSeleccionPlantas::Construct(const FArguments& InArgs)
 												+ SHorizontalBox::Slot()
 												[
 													SNew(SButton)
+														// Llamando a la funcion OnClicked
+
 														.OnClicked(this, &SSeleccionPlantas::OnClicked)
 														[
 															SNew(STextBlock)
@@ -70,14 +73,28 @@ void SSeleccionPlantas::Construct(const FArguments& InArgs)
 												+ SHorizontalBox::Slot()
 												[
 													SNew(SButton)
-														.OnClicked(this, &SSeleccionPlantas::SpawnPlant)
+														//Llamando  a la funcion OnClicked
+														.OnClicked(this, &SSeleccionPlantas::OnClicked)
 														[
 															SNew(STextBlock)
 																.Font(ButtonTextStyle)
-																.Text(FText::FromString("Spawn Plant"))
+																.Text(FText::FromString("Planta 2"))
 																.Justification(ETextJustify::Center)
 														]
 												]
+												//Boton 3
+												//+ SHorizontalBox::Slot()
+												//[
+												//	SNew(SButton)
+												//		//Llamando a la funcion SpawnPlanta
+												//		.OnClicked(this, &SSeleccion_plantas::SpawnPlanta)
+												//		[
+												//			SNew(STextBlock)
+												//				.Font(ButtonTextStyle)
+												//				.Text(FText::FromString("Spawn planta"))
+												//				.Justification(ETextJustify::Center)
+												//		]
+												//]
 												//Boton quitar menu
 												+ SHorizontalBox::Slot()
 												[
@@ -94,7 +111,7 @@ void SSeleccionPlantas::Construct(const FArguments& InArgs)
 								]
 						]
 				]
-
+				//Titulo
 				+ SOverlay::Slot()
 				.HAlign(HAlign_Left)
 				.VAlign(VAlign_Top)
@@ -135,15 +152,17 @@ void SSeleccionPlantas::Construct(const FArguments& InArgs)
 
 
 }
-FReply SSeleccionPlantas::OnMouseButtonDown(const FGeometry& MyGeometry, const FPointerEvent& MouseEvent)
-{
-	return FReply::Handled();
-}
+//FReply SSeleccionPlantas::OnMouseButtonDown(const FGeometry& MyGeometry, const FPointerEvent& MouseEvent)
+//{
+//	return FReply::Handled();
+//}
+
 FReply SSeleccionPlantas::OnClicked()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Boton 1"));
 	return FReply::Handled();
 }
+
 FReply SSeleccionPlantas::QuitarMenu()
 {
 	if (OwningHUD.IsValid())
@@ -152,13 +171,14 @@ FReply SSeleccionPlantas::QuitarMenu()
 	}
 	return FReply::Handled();
 }
+
+
 FReply SSeleccionPlantas::SpawnPlant()
 {
 	if (OwningHUD.IsValid())
 	{
-		OwningHUD->SpawnPlant();
+		OwningHUD-> SpawnPlanta();
 	}
 	return FReply::Handled();
 }
 
-END_SLATE_FUNCTION_BUILD_OPTIMIZATION

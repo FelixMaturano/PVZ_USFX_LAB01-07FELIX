@@ -59,53 +59,10 @@ void AZombie::BeginPlay()
 void AZombie::Tick(float DeltaTime)
 {
 	
-
-
-
 	Super::Tick(DeltaTime);
 
-	//if (Health <= 0)
-	//{
-	//	Destroy();
-	//}
-
-	//if (bCanMove && !this->IsHidden())
-	//{
-	//	MoveToTarget(FVector(-800.0f, -600.0f, 160.0f));
-	//}
 
 
-	//for (AZombie* ActualZombie : Zombies)
-	//{
-	//	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("SpawnAfter: %f"), ActualZombie->GetSpawnAfter()));
-
-	//	if (ActualZombie && ActualZombie->SpawnAfter <= 0)
-	//	{
-	//		ActualZombie->SetActorScale3D(FVector(1.0f, 1.0f, 1.0f));      // Establece la escala de spawn deseada
-	//		ActualZombie->SetActorHiddenInGame(false);      // Haz que el actor sea visible
-	//		//ActualZombie->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
-	//		ActualZombie->SetCanMove(true);     // Habilita las colisiones si es necesario
-	//		//NumberZombiesSpawned += 1;
-
-	//		Zombies.Remove(ActualZombie);
-
-
-	//		//for (TPair<FString, uint32> ElementoActual : MapPotenciadores)
-	//		//{
-	//		//	FString Llave = ElementoActual.Key;
-	//		//	int32 Valor = ElementoActual.Value;
-	//		//	UE_LOG(LogTemp, Warning, TEXT("Llave: %s, Valor: %d"), *Llave, Valor);
-
-	//		//	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Elemento: %s, Cantidad: %d"), *ElementoActual.Key, ElementoActual.Value));
-	//		//}
-
-	//	}
-	//	else
-	//	{
-	//		//ActualZombie->SpawnAfter -= DeltaTime;
-	//				this->AddActorWorldOffset(Direccion * DeltaMove);
-	//	}
-	//}
 	FVector LocalizacionObjetivo = FVector(-800.0f, -600.0f, 160.0f); // Cambia la ubicación objetivo según tus necesidades
 	// Calcula la dirección y distancia al objetivo
 	FVector Direccion = LocalizacionObjetivo - FVector(-800.0f, 400.0f, 160.0f);
@@ -135,9 +92,9 @@ void AZombie::Tick(float DeltaTime)
 
 void AZombie::morir()
 {
-	Destroy();			//El actor se destruye
-	this->Destroy();		//El actor también se destruye
-	SetActorHiddenInGame(true);	//El actor sólo desaparece
+	Destroy();			
+	//this->Destroy();		
+	SetActorHiddenInGame(true);	
 }
 
 

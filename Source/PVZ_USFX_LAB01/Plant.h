@@ -25,7 +25,7 @@ protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere)
-	class UStaticMeshComponent* PlantMeshComponent;
+	class UStaticMeshComponent* MeshPlanta;
 
 public:
 	// Called every frame
@@ -47,6 +47,5 @@ public:
 		FVector NormalImpulse, const FHitResult& Hit)override;//esta funcion nos notifica cada golpe que de la clase.
 	//void Defender() PURE_VIRTUAL(APlant::Defender, );
 
-private:
 
 };

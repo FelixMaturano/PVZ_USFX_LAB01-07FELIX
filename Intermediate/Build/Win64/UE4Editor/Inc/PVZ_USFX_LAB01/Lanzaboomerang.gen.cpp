@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeLanzaboomerang() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ALanzaboomerang, 2652613880);
+	IMPLEMENT_CLASS(ALanzaboomerang, 656225804);
 	template<> PVZ_USFX_LAB01_API UClass* StaticClass<ALanzaboomerang>()
 	{
 		return ALanzaboomerang::StaticClass();

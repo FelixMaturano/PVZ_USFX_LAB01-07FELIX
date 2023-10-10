@@ -1,0 +1,61 @@
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\DebugGame\PVZ_USFX_LAB01\Definitions.PVZ_USFX_LAB01.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB01/ActorJerarquico.gen.cpp
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01/ActorJerarquico.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\ActorJerarquico.generated.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB01/Controlador.gen.cpp
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01/Controlador.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Controlador.generated.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB01/CustomSceneComponent.gen.cpp
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01/CustomSceneComponent.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\CustomSceneComponent.generated.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB01/HUDPlantas.gen.cpp
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01/HUDPlantas.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\HUDPlantas.generated.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB01/MovimientoAleatorio.gen.cpp
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01/MovimientoAleatorio.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\MovimientoAleatorio.generated.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB01/Potenciador.gen.cpp
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01/Potenciador.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Potenciador.generated.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB01/ProjectileFuego.gen.cpp
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01/ProjectileFuego.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\PVZ_USFX_LAB01Projectile.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\PVZ_USFX_LAB01Projectile.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\ProjectileFuego.generated.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB01/PVZ_USFX_LAB01GameMode.gen.cpp
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01/PVZ_USFX_LAB01GameMode.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\PVZ_USFX_LAB01GameMode.generated.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB01/PVZ_USFX_LAB01Projectile.gen.cpp
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB01/Sol.gen.cpp
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01/Sol.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Sol.generated.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB01/SPawn.gen.cpp
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01/SPawn.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\SPawn.generated.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB01/Zombie.gen.cpp
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01/Zombie.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Zombie.generated.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB01/ZombieComun.gen.cpp
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01/ZombieComun.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\ZombieComun.generated.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB01/ZombieCubo.gen.cpp
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01/ZombieCubo.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\ZombieCubo.generated.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Intermediate/Build/Win64/UE4Editor/Inc/PVZ_USFX_LAB01/ZombieSenal.gen.cpp
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01/ZombieSenal.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\ZombieSenal.generated.h

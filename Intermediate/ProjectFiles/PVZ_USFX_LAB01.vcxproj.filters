@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PVZ_USFX_LAB01.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{06753699-A226-40CB-9E77-D194103910E6}</UniqueIdentifier>
+      <UniqueIdentifier>{F512EC72-52B7-44FB-8B74-6365451B14CB}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PVZ_USFX_LAB01.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{97BEFF18-BFD0-4B10-A74D-23418588C0E1}</UniqueIdentifier>
+      <UniqueIdentifier>{FA8B94CB-C882-4764-9E58-2026CDEA121B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PVZ_USFX_LAB01">
-      <UniqueIdentifier>{569400BC-E09B-402A-8B6A-DA4CC4A732AD}</UniqueIdentifier>
+      <UniqueIdentifier>{7DDFF590-E7FC-41BE-9094-EF2888E64AB2}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\ActorJerarquico.cpp">
       <Filter>Source\PVZ_USFX_LAB01</Filter>
@@ -52,10 +52,40 @@
     <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\CustomSceneComponent.h">
       <Filter>Source\PVZ_USFX_LAB01</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\FStiloWidgetSlateWidgetStyle.cpp">
+      <Filter>Source\PVZ_USFX_LAB01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\FStiloWidgetSlateWidgetStyle.h">
+      <Filter>Source\PVZ_USFX_LAB01</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Girasol.cpp">
       <Filter>Source\PVZ_USFX_LAB01</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Girasol.h">
+      <Filter>Source\PVZ_USFX_LAB01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\GridManager.cpp">
+      <Filter>Source\PVZ_USFX_LAB01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\GridManager.h">
+      <Filter>Source\PVZ_USFX_LAB01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Grilla.cpp">
+      <Filter>Source\PVZ_USFX_LAB01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Grilla.h">
+      <Filter>Source\PVZ_USFX_LAB01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\GrillaAgua.cpp">
+      <Filter>Source\PVZ_USFX_LAB01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\GrillaAgua.h">
+      <Filter>Source\PVZ_USFX_LAB01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\GrillaPasto.cpp">
+      <Filter>Source\PVZ_USFX_LAB01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\GrillaPasto.h">
       <Filter>Source\PVZ_USFX_LAB01</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Hongo.cpp">

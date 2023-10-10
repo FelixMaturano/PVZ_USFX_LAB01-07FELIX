@@ -33,13 +33,27 @@ void AHUDPlantas::QuitarHud()
 	}
 }
 
-void AHUDPlantas::SpawnPlant()
+void AHUDPlantas::SpawnPlanta()
 {
-	float locationX = FMath::RandRange(-820,0);
+	float locationX = FMath::RandRange(-820, 200);
 	float locationY = FMath::RandRange(-820, 180);
-	
-	AGirasol* Girasol = GetWorld()->SpawnActor<AGirasol>(AGirasol::StaticClass(), FVector(locationX,locationY,160), FRotator::ZeroRotator);
+
+	AGirasol* Girasol = GetWorld()->SpawnActor<AGirasol>(AGirasol::StaticClass(), FVector(locationX, locationY, 160), FRotator::ZeroRotator);
 
 	//APlant* NuevoPlantw = GetWorld()->SpawnActor<APlant>(APlant::StaticClass(), FVector(-1315, -50, 160), FRotator::ZeroRotator);
 
 }
+
+
+void AHUDPlantas::CambioPlanta1()
+{
+
+}
+
+void AHUDPlantas::CambioPlanta2()
+{
+
+
+
+}
+

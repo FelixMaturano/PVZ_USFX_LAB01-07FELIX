@@ -1,36 +1,39 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "Jugador.h"
+
+
 #include "Zombie.h"
+#include "Plant.h"
+#include "Grilla.h"
+#include "Sol.h"
 
-#include"GameFramework/SpringArmComponent.h"
-#include "Camera/CameraComponent.h"
+#include "PVZ_USFX_LAB01Pawn.h"
+
 #include"Kismet/GameplayStatics.h"
-#include "PVZ_USFX_LAB01Projectile.h"
+#include"GameFramework/SpringArmComponent.h"
 
-const FName AJugador::Spawn("MovimientoLateral");
+
+#include "Camera/CameraComponent.h"
+#include "GameFramework/PlayerController.h"
+#include "DrawDebugHelpers.h"
+#include "HeadMountedDisplayFunctionLibrary.h"
+
+
+const FName AJugador::Spawns("MovimientoLateral");
 
 // Sets default values
 AJugador::AJugador()
 {
- 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	//PrimaryActorTick.bCanEverTick = true;
-	//// Create a camera boom...
-	//CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
-	//CameraBoom->SetupAttachment(RootComponent);
-	//CameraBoom->SetUsingAbsoluteRotation(true); // Don't want arm to rotate when ship does
-	//CameraBoom->TargetArmLength = 1200.f;
-	//CameraBoom->SetRelativeRotation(FRotator(-80.f, 0.f, 0.f));
-	//CameraBoom->bDoCollisionTest = false; // Don't want to pull camera in when it collides with level
+	PrimaryActorTick.bCanEverTick = true;
 
-	//// Create a camera...
-	//CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("TopDownCamera"));
-	//CameraComponent->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
-	//CameraComponent->bUsePawnControlRotation = false;	// Camera does not rotate relative to arm
+	AutoPossessPlayer = EAutoReceiveInput::Player0;
 
 
-	contador = 0;
+	AJugador* GetViewTarget();
+
+
+	AJugador* GetViewTarget();
+
 	Localizacion = FVector(400.0, 400.0, 100.0);
 
 }
@@ -47,6 +50,36 @@ void AJugador::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if (APlayerController* PC = Cast<APlayerController>(GetController()))
+	{
+		if (UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayEnabled())
+		{
+			//UCameraComponent* OurCamera = nullptr;  // Declaración de OurCamera
+			if (UCameraComponent* OurCamera = PC->GetViewTarget()->FindComponentByClass<UCameraComponent>())
+			{
+
+				FVector Start = OurCamera->GetComponentLocation();
+				FVector End = Start + (OurCamera->GetComponentRotation().Vector() * 8000.0f);
+
+				SeguimientoGrilla(Start, End, true);
+				SeguimientoSol(Start, End, true);
+
+			}
+		}
+		else
+		{
+			FVector Start, Dir, End;
+			PC->DeprojectMousePositionToWorld(Start, Dir);
+
+			End = Start + (Dir * 8000.0f);
+
+			SeguimientoGrilla(Start, End, false);
+			SeguimientoSol(Start, End, false);
+
+		}
+
+	}
+
 }
 
 // Called to bind functionality to input
@@ -56,23 +89,115 @@ void AJugador::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 	//PlayerInputComponent->BindAxis(MovimientoLateral);
 
-
-	//PlayerInputComponent->BindAxis(Spawns); //No funciona ya que esto es con valores y no es lo mismo que llamar a la función
+	PlayerInputComponent->BindAxis(Spawns); //No funciona ya que esto es con valores y no es lo mismo que llamar a la función
 
 	PlayerInputComponent->BindAction("Accion1", IE_Pressed, this, &AJugador::SpawnZombie); //Aquí sólo se llama a la función
+
+	PlayerInputComponent->BindAction("Prueba click", EInputEvent::IE_Pressed, this, &AJugador::TriggerClick);
+
+}
+void AJugador::TriggerClick()
+{
+	if (GrillaActual)
+	{
+		GrillaActual->ManejoClick();
+	}
+	else if (SolActual)
+	{
+		SolActual->ManejoClick();
+	}
+
+
+}
+
+void AJugador::SeguimientoGrilla(const FVector& Start, const FVector& End, bool bDrawDebugHelpers)
+{
+	FHitResult HitResult;
+	GetWorld()->LineTraceSingleByChannel(HitResult, Start, End, ECC_Visibility);
+	if (bDrawDebugHelpers)
+	{
+		DrawDebugLine(GetWorld(), Start, HitResult.Location, FColor::Red);
+		DrawDebugSolidBox(GetWorld(), HitResult.Location, FVector(20.0f), FColor::Red);
+	}
+	if (HitResult.Actor.IsValid())
+	{
+		AGrilla* Grilla = Cast<AGrilla>(HitResult.Actor.Get());
+		if (GrillaActual != Grilla)
+		{
+			if (GrillaActual)
+			{
+				GrillaActual->Highlight(false);
+			}
+			if (Grilla)
+			{
+				Grilla->Highlight(true);
+			}
+			GrillaActual = Grilla;
+		}
+	}
+	else if (GrillaActual)
+	{
+		GrillaActual->Highlight(false);
+		GrillaActual = nullptr;
+	}
+}
+
+void AJugador::SeguimientoSol(const FVector& Start, const FVector& End, bool bDrawDebugHelpers)
+{
+	FHitResult HitResult;
+	GetWorld()->LineTraceSingleByChannel(HitResult, Start, End, ECC_Visibility);
+	if (bDrawDebugHelpers)
+	{
+		DrawDebugLine(GetWorld(), Start, HitResult.Location, FColor::Red);
+		DrawDebugSolidBox(GetWorld(), HitResult.Location, FVector(20.0f), FColor::Red);
+	}
+	if (HitResult.Actor.IsValid())
+	{
+		ASol* Sol = Cast<ASol>(HitResult.Actor.Get());
+		if (SolActual != Sol)
+		{
+			if (SolActual)
+			{
+				SolActual->Resaltado(false);
+			}
+			if (Sol)
+			{
+				Sol->Resaltado(true);
+			}
+			SolActual = Sol;
+		}
+	}
+	else if (SolActual)
+	{
+		SolActual->Resaltado(false);
+		SolActual = nullptr;
+	}
 }
 
 void AJugador::SpawnZombie()
 {
-	contador++;
+	//contador++;
 
 
 
-	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Este es un mensaje")));
+	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Este es un mensaje")));
 
-	AZombie* Zombie1 = GetWorld()->SpawnActor<AZombie>(AZombie::StaticClass(), Localizacion, FRotator::ZeroRotator);
+	//AZombie* Zombie1 = GetWorld()->SpawnActor<AZombie>(AZombie::StaticClass(), Localizacion, FRotator::ZeroRotator);
 
 
-	Localizacion.X = Localizacion.X - contador * 100;
+	//Localizacion.X = Localizacion.X - contador * 100;
+
+	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Botón presionado")));
+
+
+	if (PlayerController)
+	{
+		// Obtén la posición del cursor en el mundo
+		PlayerController->DeprojectMousePositionToWorld(WorldLocation, WorldDirection);
+
+		// Puedes usar WorldLocation como la ubicación donde quieres colocar la planta
+	}
+	APlant* NewPlanta = GetWorld()->SpawnActor<APlant>(APlant::StaticClass(), WorldLocation, FRotator::ZeroRotator);
+
 }
 

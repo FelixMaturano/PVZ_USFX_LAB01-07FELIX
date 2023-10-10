@@ -12,8 +12,8 @@ AGirasol::AGirasol()
 
 
 
-	PlantMeshComponent->SetStaticMesh(MeshGirasol.Object);
-	PlantMeshComponent->SetRelativeScale3D(FVector(0.5f, 0.5f, 0.5f));
+	MeshPlanta->SetStaticMesh(MeshGirasol.Object);
+	MeshPlanta->SetRelativeScale3D(FVector(3, 1, 3));
 	Tags.Add(TEXT("Girasol"));
 	energia = 140;
 
@@ -27,6 +27,7 @@ void AGirasol::BeginPlay()
 	int Tiempo = FMath::RandRange(3, 6);
 
 	UWorld* const World = GetWorld();
+
 	World->GetTimerManager().SetTimer(Temporizador, this, &AGirasol::SpawnSoles, Tiempo, true);
 
 }

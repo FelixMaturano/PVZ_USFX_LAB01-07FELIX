@@ -16,12 +16,17 @@ class PVZ_USFX_LAB01_API AHUDPlantas : public AHUD
 
 public:
 	TSharedPtr<class SSeleccionPlantas> WidgetSeleccion;
+
 	TSharedPtr<class SWidget> WidgetActivo;
 
 	virtual void BeginPlay() override;
 
 	void QuitarHud();
 
-	void SpawnPlant(); 
+	void SpawnPlanta();
+
+	void CambioPlanta1();
+
+	void CambioPlanta2();
 	
 };
