@@ -50,35 +50,35 @@ void AJugador::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (APlayerController* PC = Cast<APlayerController>(GetController()))
-	{
-		if (UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayEnabled())
-		{
-			//UCameraComponent* OurCamera = nullptr;  // Declaración de OurCamera
-			if (UCameraComponent* OurCamera = PC->GetViewTarget()->FindComponentByClass<UCameraComponent>())
-			{
+	//if (APlayerController* PC = Cast<APlayerController>(GetController()))
+	//{
+	//	if (UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayEnabled())
+	//	{
+	//		//UCameraComponent* OurCamera = nullptr;  // Declaración de OurCamera
+	//		if (UCameraComponent* OurCamera = PC->GetViewTarget()->FindComponentByClass<UCameraComponent>())
+	//		{
 
-				FVector Start = OurCamera->GetComponentLocation();
-				FVector End = Start + (OurCamera->GetComponentRotation().Vector() * 8000.0f);
+	//			FVector Start = OurCamera->GetComponentLocation();
+	//			FVector End = Start + (OurCamera->GetComponentRotation().Vector() * 8000.0f);
 
-				SeguimientoGrilla(Start, End, true);
-				SeguimientoSol(Start, End, true);
+	//			SeguimientoGrilla(Start, End, true);
+	//			SeguimientoSol(Start, End, true);
 
-			}
-		}
-		else
-		{
-			FVector Start, Dir, End;
-			PC->DeprojectMousePositionToWorld(Start, Dir);
+	//		}
+	//	}
+	//	else
+	//	{
+	//		FVector Start, Dir, End;
+	//		PC->DeprojectMousePositionToWorld(Start, Dir);
 
-			End = Start + (Dir * 8000.0f);
+	//		End = Start + (Dir * 8000.0f);
 
-			SeguimientoGrilla(Start, End, false);
-			SeguimientoSol(Start, End, false);
+	//		SeguimientoGrilla(Start, End, false);
+	//		SeguimientoSol(Start, End, false);
 
-		}
+	//	}
 
-	}
+	//}
 
 }
 

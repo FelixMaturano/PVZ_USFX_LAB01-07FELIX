@@ -23,6 +23,7 @@ class APVZ_USFX_LAB01GameMode : public AGameModeBase
 
 public:
 	APVZ_USFX_LAB01GameMode();
+	void PatronesCreacionales();
 
 	///Esto vamos a utilizar para nuestra Orda de Zombies
 	TArray<class AZombie*> Zombies;

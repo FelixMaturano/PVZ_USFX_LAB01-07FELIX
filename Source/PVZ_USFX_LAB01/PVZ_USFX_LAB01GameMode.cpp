@@ -13,8 +13,6 @@
 #include"Lanzaguisantes.h"
 #include "Lanzaboomerang.h"
 
-
-
 #include "HUDPlantas.h"
 #include "Controlador.h"
 #include "Jugador.h"
@@ -26,6 +24,11 @@
 #include "ZombieComun.h"
 #include "ZombieCono.h"
 #include "ZombieCubo.h"
+
+
+#include "Patterns/FactoryMethod/FactoryMethod_Principal.h"
+
+
 APVZ_USFX_LAB01GameMode::APVZ_USFX_LAB01GameMode()
 {
 	// set default pawn class to our character class
@@ -54,12 +57,22 @@ APVZ_USFX_LAB01GameMode::APVZ_USFX_LAB01GameMode()
 
 }
 
+void APVZ_USFX_LAB01GameMode::PatronesCreacionales()
+{
+	AFactoryMethod_Principal* FactoryMethod = GetWorld()->SpawnActor<AFactoryMethod_Principal>(AFactoryMethod_Principal::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
 
+	//ADecorator_Principal* Decorator = GetWorld()->SpawnActor<ADecorator_Principal>(ADecorator_Principal::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
+
+	//AObserver_Principal* Observer = GetWorld()->SpawnActor<AObserver_Principal>(AObserver_Principal::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
+
+}
 
 
 void APVZ_USFX_LAB01GameMode::BeginPlay()
 {
 	Super::BeginPlay();
+
+	PatronesCreacionales();
 
 
 	UWorld* const World = GetWorld();

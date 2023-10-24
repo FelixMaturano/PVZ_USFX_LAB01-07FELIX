@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PVZ_USFX_LAB01.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{F512EC72-52B7-44FB-8B74-6365451B14CB}</UniqueIdentifier>
+      <UniqueIdentifier>{5B3A038F-6A6E-4385-9781-002547D3CCC5}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PVZ_USFX_LAB01.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{FA8B94CB-C882-4764-9E58-2026CDEA121B}</UniqueIdentifier>
+      <UniqueIdentifier>{B89E731D-0646-43CF-9AB1-2D4D12C8DDE4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PVZ_USFX_LAB01">
-      <UniqueIdentifier>{7DDFF590-E7FC-41BE-9094-EF2888E64AB2}</UniqueIdentifier>
+      <UniqueIdentifier>{171DC3F5-BA82-4B87-BD65-4A1BD35F3A83}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\ActorJerarquico.cpp">
       <Filter>Source\PVZ_USFX_LAB01</Filter>
@@ -234,6 +234,60 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\ZombieSenal.h">
       <Filter>Source\PVZ_USFX_LAB01</Filter>
+    </ClInclude>
+    <Filter Include="Source\PVZ_USFX_LAB01\Patterns">
+      <UniqueIdentifier>{F9C2AB0E-491B-420F-A3DB-F28D2959B272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\PVZ_USFX_LAB01\Patterns\FactoryMethod">
+      <UniqueIdentifier>{873E9019-EDA9-4B68-9A4E-AF62BDFE9CCC}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\FactoryMethod_Principal.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\FactoryMethod_Principal.h">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\GeneradorZombies.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\GeneradorZombies.h">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\GeneradorZombiesAgua.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\GeneradorZombiesAgua.h">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\GeneradorZombiesTierra.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\GeneradorZombiesTierra.h">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\ZombieAguaBuzo.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\ZombieAguaBuzo.h">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\Zombies.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\Zombies.h">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\ZombieTierraGlobo.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\ZombieTierraGlobo.h">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\ZombieTierraMinero.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\ZombieTierraMinero.h">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
