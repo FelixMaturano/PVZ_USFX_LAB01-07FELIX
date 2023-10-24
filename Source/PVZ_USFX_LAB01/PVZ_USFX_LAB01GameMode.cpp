@@ -27,6 +27,7 @@
 
 
 #include "Patterns/FactoryMethod/FactoryMethod_Principal.h"
+#include "Patterns/Decorator/Decorator_Principal.h"
 
 
 APVZ_USFX_LAB01GameMode::APVZ_USFX_LAB01GameMode()
@@ -59,9 +60,9 @@ APVZ_USFX_LAB01GameMode::APVZ_USFX_LAB01GameMode()
 
 void APVZ_USFX_LAB01GameMode::PatronesCreacionales()
 {
-	AFactoryMethod_Principal* FactoryMethod = GetWorld()->SpawnActor<AFactoryMethod_Principal>(AFactoryMethod_Principal::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
+	//AFactoryMethod_Principal* FactoryMethod = GetWorld()->SpawnActor<AFactoryMethod_Principal>(AFactoryMethod_Principal::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
 
-	//ADecorator_Principal* Decorator = GetWorld()->SpawnActor<ADecorator_Principal>(ADecorator_Principal::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
+	ADecorator_Principal* Decorator = GetWorld()->SpawnActor<ADecorator_Principal>(ADecorator_Principal::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
 
 	//AObserver_Principal* Observer = GetWorld()->SpawnActor<AObserver_Principal>(AObserver_Principal::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
 
@@ -131,9 +132,9 @@ void APVZ_USFX_LAB01GameMode::BeginPlay()
 			//UE_LOG(LogTemp, Warning, TEXT("Energía de %s: %i"), *NombrePlanta, NuevaPlanta->energia);
 
 			// Muestra un mensaje en la pantalla
-			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Green, FString::Printf(TEXT("Energía de %s: %i"), *NombrePlanta, NuevaPlantaBoomerang->energia));
+		//	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Green, FString::Printf(TEXT("Energía de %s: %i"), *NombrePlanta, NuevaPlantaBoomerang->energia));
 			// Muestra un mensaje en el registro de errores
-			UE_LOG(LogTemp, Warning, TEXT("Energía de %s: %i"), *NombrePlanta, NuevaPlantaBoomerang->energia);
+		//	UE_LOG(LogTemp, Warning, TEXT("Energía de %s: %i"), *NombrePlanta, NuevaPlantaBoomerang->energia);
 
 			// Agrega la planta al contenedor de plantas
 			Plantas.Add(NombrePlanta, NuevaPlantaBoomerang);
@@ -160,7 +161,7 @@ void APVZ_USFX_LAB01GameMode::BeginPlay()
 		// Definición de un objeto de tipo World
 		// //''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 	//UWorld* const World = GetWorld();
-	World->GetTimerManager().SetTimer(Temporizador2, this, &APVZ_USFX_LAB01GameMode::MostrarEnergiaDePlantas, 1.f, true);
+////	World->GetTimerManager().SetTimer(Temporizador2, this, &APVZ_USFX_LAB01GameMode::MostrarEnergiaDePlantas, 1.f, true);
 
 
 

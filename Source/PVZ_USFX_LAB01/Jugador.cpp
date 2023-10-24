@@ -54,7 +54,7 @@ void AJugador::Tick(float DeltaTime)
 	//{
 	//	if (UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayEnabled())
 	//	{
-	//		//UCameraComponent* OurCamera = nullptr;  // Declaración de OurCamera
+	//		UCameraComponent* OurCamera = nullptr;  // Declaración de OurCamera
 	//		if (UCameraComponent* OurCamera = PC->GetViewTarget()->FindComponentByClass<UCameraComponent>())
 	//		{
 

@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include"SSeleccionPlantas.h"
+#include "SSeleccionPlantas.h"
 #include "SlateOptMacros.h"
 #include "Widgets/SBoxPanel.h"
 #include "Widgets/Images/SImage.h"
@@ -83,18 +83,18 @@ void SSeleccionPlantas::Construct(const FArguments& InArgs)
 														]
 												]
 												//Boton 3
-												//+ SHorizontalBox::Slot()
-												//[
-												//	SNew(SButton)
-												//		//Llamando a la funcion SpawnPlanta
-												//		.OnClicked(this, &SSeleccion_plantas::SpawnPlanta)
-												//		[
-												//			SNew(STextBlock)
-												//				.Font(ButtonTextStyle)
-												//				.Text(FText::FromString("Spawn planta"))
-												//				.Justification(ETextJustify::Center)
-												//		]
-												//]
+												+ SHorizontalBox::Slot()
+												[
+													SNew(SButton)
+														//Llamando a la funcion SpawnPlanta
+														.OnClicked(this, &SSeleccionPlantas::SpawnPlant)
+														[
+															SNew(STextBlock)
+																.Font(ButtonTextStyle)
+																.Text(FText::FromString("Spawn planta"))
+																.Justification(ETextJustify::Center)
+														]
+												]
 												//Boton quitar menu
 												+ SHorizontalBox::Slot()
 												[

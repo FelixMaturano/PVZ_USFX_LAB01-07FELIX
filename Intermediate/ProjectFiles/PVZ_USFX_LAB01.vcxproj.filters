@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PVZ_USFX_LAB01.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{5B3A038F-6A6E-4385-9781-002547D3CCC5}</UniqueIdentifier>
+      <UniqueIdentifier>{E07B8410-C928-433C-928A-897BC508E53D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PVZ_USFX_LAB01.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{B89E731D-0646-43CF-9AB1-2D4D12C8DDE4}</UniqueIdentifier>
+      <UniqueIdentifier>{830E47B8-F23F-46C5-AE1F-8E009A817685}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PVZ_USFX_LAB01">
-      <UniqueIdentifier>{171DC3F5-BA82-4B87-BD65-4A1BD35F3A83}</UniqueIdentifier>
+      <UniqueIdentifier>{294D4A65-2F62-40C4-96BE-EC3D15781D96}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\ActorJerarquico.cpp">
       <Filter>Source\PVZ_USFX_LAB01</Filter>
@@ -236,10 +236,49 @@
       <Filter>Source\PVZ_USFX_LAB01</Filter>
     </ClInclude>
     <Filter Include="Source\PVZ_USFX_LAB01\Patterns">
-      <UniqueIdentifier>{F9C2AB0E-491B-420F-A3DB-F28D2959B272}</UniqueIdentifier>
+      <UniqueIdentifier>{1C485C54-BBFE-4074-ADC2-83DA4ACA3400}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\PVZ_USFX_LAB01\Patterns\Decorator">
+      <UniqueIdentifier>{206C521E-3E6E-4F44-97A3-1A67C7DD9366}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Patterns\Decorator\DecoratorPlantas.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\Decorator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Patterns\Decorator\DecoratorPlantas.h">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\Decorator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Patterns\Decorator\Decorator_Principal.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\Decorator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Patterns\Decorator\Decorator_Principal.h">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\Decorator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Patterns\Decorator\Enemigo.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\Decorator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Patterns\Decorator\Enemigo.h">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\Decorator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Patterns\Decorator\EnemigoADistacia.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\Decorator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Patterns\Decorator\EnemigoADistacia.h">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\Decorator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Patterns\Decorator\EnemigoCualquiera.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\Decorator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Patterns\Decorator\EnemigoCualquiera.h">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\Decorator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Patterns\Decorator\EnemigoCuerpoACuerpo.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\Decorator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Patterns\Decorator\EnemigoCuerpoACuerpo.h">
+      <Filter>Source\PVZ_USFX_LAB01\Patterns\Decorator</Filter>
+    </ClInclude>
     <Filter Include="Source\PVZ_USFX_LAB01\Patterns\FactoryMethod">
-      <UniqueIdentifier>{873E9019-EDA9-4B68-9A4E-AF62BDFE9CCC}</UniqueIdentifier>
+      <UniqueIdentifier>{9CDFEE8E-F7AB-40A2-90C9-653262E6F83D}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\FactoryMethod_Principal.cpp">
       <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
