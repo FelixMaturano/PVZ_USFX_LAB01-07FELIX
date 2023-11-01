@@ -10,7 +10,6 @@
 #include "C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/GrillaPasto.cpp"
 #include "C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Hongo.cpp"
 #include "C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/HUDPlantas.cpp"
-#include "C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Jugador.cpp"
 #include "C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Lanzaboomerang.cpp"
 #include "C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Lanzaguisantes.cpp"
 #include "C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/MovimientoAleatorio.cpp"

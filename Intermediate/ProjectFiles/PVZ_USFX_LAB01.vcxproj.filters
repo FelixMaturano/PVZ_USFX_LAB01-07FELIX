@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PVZ_USFX_LAB01.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{E07B8410-C928-433C-928A-897BC508E53D}</UniqueIdentifier>
+      <UniqueIdentifier>{B32A54C3-800F-4477-AEB4-E24D54774B2B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PVZ_USFX_LAB01.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{830E47B8-F23F-46C5-AE1F-8E009A817685}</UniqueIdentifier>
+      <UniqueIdentifier>{9C91792C-2B0D-4DB1-9CE5-E9363BDB83F6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PVZ_USFX_LAB01">
-      <UniqueIdentifier>{294D4A65-2F62-40C4-96BE-EC3D15781D96}</UniqueIdentifier>
+      <UniqueIdentifier>{BBE50649-8CD1-4A8D-B305-1F2A147E3BAC}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\ActorJerarquico.cpp">
       <Filter>Source\PVZ_USFX_LAB01</Filter>
@@ -236,10 +236,10 @@
       <Filter>Source\PVZ_USFX_LAB01</Filter>
     </ClInclude>
     <Filter Include="Source\PVZ_USFX_LAB01\Patterns">
-      <UniqueIdentifier>{1C485C54-BBFE-4074-ADC2-83DA4ACA3400}</UniqueIdentifier>
+      <UniqueIdentifier>{760F97BF-0C6D-4B4A-94C0-198CF6476BBB}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\PVZ_USFX_LAB01\Patterns\Decorator">
-      <UniqueIdentifier>{206C521E-3E6E-4F44-97A3-1A67C7DD9366}</UniqueIdentifier>
+      <UniqueIdentifier>{BE66F08B-5C56-4FA6-A11D-1F7450124D84}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Patterns\Decorator\DecoratorPlantas.cpp">
       <Filter>Source\PVZ_USFX_LAB01\Patterns\Decorator</Filter>
@@ -278,7 +278,7 @@
       <Filter>Source\PVZ_USFX_LAB01\Patterns\Decorator</Filter>
     </ClInclude>
     <Filter Include="Source\PVZ_USFX_LAB01\Patterns\FactoryMethod">
-      <UniqueIdentifier>{9CDFEE8E-F7AB-40A2-90C9-653262E6F83D}</UniqueIdentifier>
+      <UniqueIdentifier>{4455C259-442B-48C5-8F1D-79A947E8335A}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\FactoryMethod_Principal.cpp">
       <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
@@ -327,6 +327,48 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\ZombieTierraMinero.h">
       <Filter>Source\PVZ_USFX_LAB01\Patterns\FactoryMethod</Filter>
+    </ClInclude>
+    <Filter Include="Source\PVZ_USFX_LAB01\PatternsBuilder">
+      <UniqueIdentifier>{E635C8A0-8787-4AB3-A6F2-1AD2CCDC7A4D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\PVZ_USFX_LAB01\PatternsBuilder\builder">
+      <UniqueIdentifier>{89C6E2BE-577E-460F-9AB6-327E3C45A385}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\PatternsBuilder\builder\Builder_GameModeBase.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\PatternsBuilder\builder</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\PatternsBuilder\builder\Builder_GameModeBase.h">
+      <Filter>Source\PVZ_USFX_LAB01\PatternsBuilder\builder</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\PatternsBuilder\builder\Build_Zombies.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\PatternsBuilder\builder</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\PatternsBuilder\builder\Build_Zombies.h">
+      <Filter>Source\PVZ_USFX_LAB01\PatternsBuilder\builder</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\PatternsBuilder\builder\DirectorZombie.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\PatternsBuilder\builder</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\PatternsBuilder\builder\DirectorZombie.h">
+      <Filter>Source\PVZ_USFX_LAB01\PatternsBuilder\builder</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\PatternsBuilder\builder\FZombies.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\PatternsBuilder\builder</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\PatternsBuilder\builder\FZombies.h">
+      <Filter>Source\PVZ_USFX_LAB01\PatternsBuilder\builder</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\PatternsBuilder\builder\ZombieLector.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\PatternsBuilder\builder</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\PatternsBuilder\builder\ZombieLector.h">
+      <Filter>Source\PVZ_USFX_LAB01\PatternsBuilder\builder</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB01\PatternsBuilder\builder\ZombiesComun.cpp">
+      <Filter>Source\PVZ_USFX_LAB01\PatternsBuilder\builder</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB01\PatternsBuilder\builder\ZombiesComun.h">
+      <Filter>Source\PVZ_USFX_LAB01\PatternsBuilder\builder</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

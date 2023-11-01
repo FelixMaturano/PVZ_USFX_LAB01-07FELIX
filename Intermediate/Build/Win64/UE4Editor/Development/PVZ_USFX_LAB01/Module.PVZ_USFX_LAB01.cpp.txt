@@ -753,6 +753,22 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\SystemSettings.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\EngineUtils.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Jugador.cpp
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Jugador.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Jugador.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Zombie.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Zombie.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\PVZ_USFX_LAB01Pawn.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\PVZ_USFX_LAB01Pawn.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\HeadMountedDisplayFunctionLibrary.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\HeadMountedDisplayTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\IMotionController.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\HeadMountedDisplayTypes.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\IIdentifiableXRDevice.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\IIdentifiableXRDevice.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\XRGestureConfig.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\XRGestureConfig.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\HeadMountedDisplayFunctionLibrary.generated.h
 C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Lanzaboomerang.cpp
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Lanzaboomerang.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\PlantAttack.h
@@ -765,6 +781,24 @@ C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/P
 C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Nuez.cpp
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Nuez.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Nuez.generated.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Patterns/Decorator/Decorator_Principal.cpp
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Patterns\Decorator\Decorator_Principal.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Patterns\Decorator\Enemigo.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Enemigo.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Decorator_Principal.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Patterns\Decorator\EnemigoADistacia.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Patterns\Decorator\DecoratorPlantas.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\DecoratorPlantas.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\EnemigoADistacia.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Patterns\Decorator\EnemigoCualquiera.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\EnemigoCualquiera.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Patterns\Decorator\EnemigoCuerpoACuerpo.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\EnemigoCuerpoACuerpo.generated.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Patterns/Decorator/DecoratorPlantas.cpp
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Patterns/Decorator/Enemigo.cpp
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Patterns/Decorator/EnemigoADistacia.cpp
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Patterns/Decorator/EnemigoCualquiera.cpp
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Patterns/Decorator/EnemigoCuerpoACuerpo.cpp
 C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Patterns/FactoryMethod/FactoryMethod_Principal.cpp
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Patterns\FactoryMethod\FactoryMethod_Principal.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\FactoryMethod_Principal.generated.h
@@ -792,8 +826,6 @@ C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/P
 C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Plant.cpp
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\PVZ_USFX_LAB01Projectile.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\PVZ_USFX_LAB01Projectile.generated.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Zombie.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Zombie.generated.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\PVZ_USFX_LAB01GameMode.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\PVZ_USFX_LAB01GameMode.generated.h
 C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/PlantAttack.cpp
@@ -806,38 +838,26 @@ C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermed
 C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/ProjectileFuego.cpp
 C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/PVZ_USFX_LAB01.cpp
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\PVZ_USFX_LAB01.h
-C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/PVZ_USFX_LAB01Pawn.cpp
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\PVZ_USFX_LAB01Pawn.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\PVZ_USFX_LAB01Pawn.generated.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Jugador.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Jugador.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\HeadMountedDisplayFunctionLibrary.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\HeadMountedDisplayTypes.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\IMotionController.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\HeadMountedDisplayTypes.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\IIdentifiableXRDevice.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\IIdentifiableXRDevice.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\XRGestureConfig.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\XRGestureConfig.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\HeadMountedDisplayFunctionLibrary.generated.h
-C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/PVZ_USFX_LAB01Projectile.cpp
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/PVZ_USFX_LAB01GameMode.cpp
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\SPawn.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\SPawn.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\ZombieComun.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\ZombieComun.generated.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\ZombieCono.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\ZombieCono.generated.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\ZombieCubo.h
+C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\ZombieCubo.generated.h
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/PVZ_USFX_LAB01Pawn.cpp
+C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/PVZ_USFX_LAB01Projectile.cpp
 C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Repetidora.cpp
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\Repetidora.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\Repetidora.generated.h
 C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Sol.cpp
 C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/SPawn.cpp
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\SPawn.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\SPawn.generated.h
 C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/Zombie.cpp
 C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/ZombieComun.cpp
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\ZombieComun.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\ZombieComun.generated.h
 C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/ZombieCono.cpp
 C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/ZombieCubo.cpp
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\ZombieCubo.h
-C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\ZombieCubo.generated.h
 C:/TODO/PVZ-1/Hasta AHI laboratorio 5/PvZ_USFXLAB01_5/PVZ_USFX_LAB01_05/Source/PVZ_USFX_LAB01/ZombieSenal.cpp
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Source\PVZ_USFX_LAB01\ZombieSenal.h
 C:\TODO\PVZ-1\Hasta AHI laboratorio 5\PvZ_USFXLAB01_5\PVZ_USFX_LAB01_05\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB01\ZombieSenal.generated.h
